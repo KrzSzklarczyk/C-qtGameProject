@@ -27,6 +27,15 @@ void User::uploadFiles()
 
 bool User::Reg(QString log, QString pass)
 {
+    this->uploadFiles();
+    for(auto &x : this->m_ListaUser)
+    {
+        if(x.getLogin() == log)
+        {
+            qDebug() << "Ktos posiada taka nazwe uzytkownika!";
+            return false;
+        }
+    }
     m_MyFile.setFileName(m_FileName);
     if(m_MyFile.open(QIODevice::Append | QIODevice::Text))
     {
@@ -65,6 +74,11 @@ bool User::LogIn(QString log, QString pass)
     }
     qDebug() << "nie przeszl2";
     return false;
+}
+
+QList<UserType> User::getUserList()
+{
+    return this->m_ListaUser;
 }
 
 QString User::getUserName()

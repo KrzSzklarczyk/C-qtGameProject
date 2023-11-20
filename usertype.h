@@ -3,8 +3,6 @@
 
 #include <qstring.h>
 
-
-
 class UserType
 {
 private:

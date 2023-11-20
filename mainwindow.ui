@@ -39,6 +39,13 @@
              <layout class="QVBoxLayout" name="verticalLayout_2"/>
             </item>
             <item>
+             <widget class="QPushButton" name="pushButtonlogout">
+              <property name="text">
+               <string>logout</string>
+              </property>
+             </widget>
+            </item>
+            <item>
              <spacer name="horizontalSpacer_6">
               <property name="orientation">
                <enum>Qt::Horizontal</enum>

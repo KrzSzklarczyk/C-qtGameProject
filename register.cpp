@@ -17,16 +17,17 @@ Register::~Register()
 
 void Register::on_pushButtonRegister_clicked()
 {
+    QMessageBox mesBox;
     if(us.Reg(ui->textLoginReg->toPlainText(), ui->textPassReg->toPlainText()))
     {
-        QMessageBox mesBox;
         mesBox.setText("Udalo sie poprawnie zarejestrowac!!!");
         mesBox.exec();
+        close();
     }
     else
     {
-        QMessageBox mesBox;
-        mesBox.setText("Nie udalo sie poprawnie zarejestrowac!!!");
+        mesBox.setText("Taka nazwa uzytkownika juz istnieje!!!");
         mesBox.exec();
+        close();
     }
 }

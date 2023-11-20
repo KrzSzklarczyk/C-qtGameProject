@@ -19,7 +19,6 @@ public:
     explicit Register(QWidget *parent = nullptr);
     ~Register();
     void setGUI();
-
 public slots:
     void on_pushButtonRegister_clicked();
 

@@ -48,3 +48,27 @@ void MainWindow::setGUI()
     ui->labelMenuGraCredits->setText(QString::number(us.getCredits()));
 }
 
+void MainWindow::on_pushButtonlogout_clicked()
+{
+    ui->stackedWidget->setCurrentWidget(ui->Start);
+}
+
+void MainWindow::on_pushButtonGra1_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButtonGra2_clicked()
+{
+
+}
+
+
+void MainWindow::on_pushButtonGra3_clicked()
+{
+
+}
+
+
+

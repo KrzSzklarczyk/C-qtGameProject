@@ -22,6 +22,7 @@ public:
     User();
     void uploadFiles();
     QString getUserName();
+    QList<UserType> getUserList();
     int getCredits();
     bool LogIn(QString log, QString pass);
     bool Reg(QString log, QString pass);

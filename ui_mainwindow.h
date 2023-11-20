@@ -36,6 +36,7 @@ public:
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
+    QPushButton *pushButtonlogout;
     QSpacerItem *horizontalSpacer_6;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout_9;
@@ -45,12 +46,12 @@ public:
     QLabel *label_7;
     QLabel *labelMenuGraCredits;
     QHBoxLayout *horizontalLayout_7;
-    QPushButton *pushButton_2;
+    QPushButton *pushButtonGra1;
     QSpacerItem *horizontalSpacer_3;
-    QPushButton *pushButton;
+    QPushButton *pushButtonGra2;
     QHBoxLayout *horizontalLayout_6;
     QSpacerItem *horizontalSpacer_4;
-    QPushButton *pushButton_3;
+    QPushButton *pushButtonGra3;
     QSpacerItem *horizontalSpacer_5;
     QWidget *Start;
     QGridLayout *gridLayout_2;
@@ -80,7 +81,9 @@ public:
     QSpacerItem *horizontalSpacer;
     QVBoxLayout *verticalLayout_7;
     QHBoxLayout *horizontalLayout_5;
+    QSpacerItem *horizontalSpacer_7;
     QPushButton *pushButtonRegister;
+    QSpacerItem *horizontalSpacer_8;
     QStatusBar *statusbar;
 
     void setupUi(QMainWindow *MainWindow)
@@ -108,6 +111,11 @@ public:
         verticalLayout_2->setObjectName("verticalLayout_2");
 
         horizontalLayout->addLayout(verticalLayout_2);
+
+        pushButtonlogout = new QPushButton(MenuGra);
+        pushButtonlogout->setObjectName("pushButtonlogout");
+
+        horizontalLayout->addWidget(pushButtonlogout);
 
         horizontalSpacer_6 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
@@ -153,21 +161,21 @@ public:
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setObjectName("horizontalLayout_7");
-        pushButton_2 = new QPushButton(MenuGra);
-        pushButton_2->setObjectName("pushButton_2");
-        pushButton_2->setMinimumSize(QSize(50, 100));
+        pushButtonGra1 = new QPushButton(MenuGra);
+        pushButtonGra1->setObjectName("pushButtonGra1");
+        pushButtonGra1->setMinimumSize(QSize(50, 100));
 
-        horizontalLayout_7->addWidget(pushButton_2);
+        horizontalLayout_7->addWidget(pushButtonGra1);
 
         horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         horizontalLayout_7->addItem(horizontalSpacer_3);
 
-        pushButton = new QPushButton(MenuGra);
-        pushButton->setObjectName("pushButton");
-        pushButton->setMinimumSize(QSize(50, 100));
+        pushButtonGra2 = new QPushButton(MenuGra);
+        pushButtonGra2->setObjectName("pushButtonGra2");
+        pushButtonGra2->setMinimumSize(QSize(50, 100));
 
-        horizontalLayout_7->addWidget(pushButton);
+        horizontalLayout_7->addWidget(pushButtonGra2);
 
 
         verticalLayout->addLayout(horizontalLayout_7);
@@ -178,11 +186,11 @@ public:
 
         horizontalLayout_6->addItem(horizontalSpacer_4);
 
-        pushButton_3 = new QPushButton(MenuGra);
-        pushButton_3->setObjectName("pushButton_3");
-        pushButton_3->setMinimumSize(QSize(50, 100));
+        pushButtonGra3 = new QPushButton(MenuGra);
+        pushButtonGra3->setObjectName("pushButtonGra3");
+        pushButtonGra3->setMinimumSize(QSize(50, 100));
 
-        horizontalLayout_6->addWidget(pushButton_3);
+        horizontalLayout_6->addWidget(pushButtonGra3);
 
         horizontalSpacer_5 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
@@ -341,10 +349,18 @@ public:
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setObjectName("horizontalLayout_5");
+        horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_7);
+
         pushButtonRegister = new QPushButton(Start);
         pushButtonRegister->setObjectName("pushButtonRegister");
 
         horizontalLayout_5->addWidget(pushButtonRegister);
+
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_5->addItem(horizontalSpacer_8);
 
 
         verticalLayout_4->addLayout(horizontalLayout_5);
@@ -366,7 +382,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -375,13 +391,14 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButtonlogout->setText(QCoreApplication::translate("MainWindow", "logout", nullptr));
         label_6->setText(QCoreApplication::translate("MainWindow", "Welcome", nullptr));
         labelMenuGraUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_7->setText(QCoreApplication::translate("MainWindow", "Credits", nullptr));
         labelMenuGraCredits->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Gra3", nullptr));
+        pushButtonGra1->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
+        pushButtonGra2->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
+        pushButtonGra3->setText(QCoreApplication::translate("MainWindow", "Gra3", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
@@ -389,7 +406,7 @@ public:
         label->setText(QCoreApplication::translate("MainWindow", "Login", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "Haslo", nullptr));
         pushButtonLogIn->setText(QCoreApplication::translate("MainWindow", "Log In!", nullptr));
-        pushButtonRegister->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButtonRegister->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
     } // retranslateUi
 
 };

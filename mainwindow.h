@@ -23,5 +23,9 @@ public:
 public slots:
     void on_pushButtonLogIn_clicked();
     void on_pushButtonRegister_clicked();
+    void on_pushButtonGra1_clicked();
+    void on_pushButtonGra2_clicked();
+    void on_pushButtonGra3_clicked();
+    void on_pushButtonlogout_clicked();
 };
 #endif // MAINWINDOW_H
