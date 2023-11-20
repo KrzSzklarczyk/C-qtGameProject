@@ -1,7 +1,9 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
-
+#include "register.h"
+#include <user.h>
 #include <QMainWindow>
+#include <QMessageBox>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -10,12 +12,16 @@ QT_END_NAMESPACE
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
+private:
+    Ui::MainWindow *ui;
+    User us;
+    Register *m_okno;
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-
-private:
-    Ui::MainWindow *ui;
+    void setGUI();
+public slots:
+    void on_pushButtonLogIn_clicked();
+    void on_pushButtonRegister_clicked();
 };
 #endif // MAINWINDOW_H
