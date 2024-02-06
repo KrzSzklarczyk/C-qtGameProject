@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.0
+** Created by: Qt User Interface Compiler version 6.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -53,6 +53,12 @@ public:
     QSpacerItem *horizontalSpacer_4;
     QPushButton *pushButtonGra3;
     QSpacerItem *horizontalSpacer_5;
+    QWidget *Gra1SlotMachine;
+    QPushButton *BackToMainMenu;
+    QPushButton *spinButton;
+    QLabel *slotMachineDrum1;
+    QLabel *slotMachineDrum2;
+    QLabel *slotMachineDrum3;
     QWidget *Start;
     QGridLayout *gridLayout_2;
     QHBoxLayout *horizontalLayout_3;
@@ -89,31 +95,31 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName("MainWindow");
+            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setWindowModality(Qt::NonModal);
         MainWindow->resize(778, 396);
         centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName("centralwidget");
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         gridLayout = new QGridLayout(centralwidget);
-        gridLayout->setObjectName("gridLayout");
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         stackedWidget = new QStackedWidget(centralwidget);
-        stackedWidget->setObjectName("stackedWidget");
+        stackedWidget->setObjectName(QString::fromUtf8("stackedWidget"));
         stackedWidget->setMaximumSize(QSize(600, 400));
         MenuGra = new QWidget();
-        MenuGra->setObjectName("MenuGra");
+        MenuGra->setObjectName(QString::fromUtf8("MenuGra"));
         horizontalLayout_2 = new QHBoxLayout(MenuGra);
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         verticalLayout = new QVBoxLayout();
-        verticalLayout->setObjectName("verticalLayout");
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
 
         horizontalLayout->addLayout(verticalLayout_2);
 
         pushButtonlogout = new QPushButton(MenuGra);
-        pushButtonlogout->setObjectName("pushButtonlogout");
+        pushButtonlogout->setObjectName(QString::fromUtf8("pushButtonlogout"));
 
         horizontalLayout->addWidget(pushButtonlogout);
 
@@ -122,16 +128,16 @@ public:
         horizontalLayout->addItem(horizontalSpacer_6);
 
         verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setObjectName("verticalLayout_3");
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName("horizontalLayout_9");
+        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
         label_6 = new QLabel(MenuGra);
-        label_6->setObjectName("label_6");
+        label_6->setObjectName(QString::fromUtf8("label_6"));
 
         horizontalLayout_9->addWidget(label_6);
 
         labelMenuGraUserName = new QLabel(MenuGra);
-        labelMenuGraUserName->setObjectName("labelMenuGraUserName");
+        labelMenuGraUserName->setObjectName(QString::fromUtf8("labelMenuGraUserName"));
 
         horizontalLayout_9->addWidget(labelMenuGraUserName);
 
@@ -139,14 +145,14 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_9);
 
         horizontalLayout_14 = new QHBoxLayout();
-        horizontalLayout_14->setObjectName("horizontalLayout_14");
+        horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
         label_7 = new QLabel(MenuGra);
-        label_7->setObjectName("label_7");
+        label_7->setObjectName(QString::fromUtf8("label_7"));
 
         horizontalLayout_14->addWidget(label_7);
 
         labelMenuGraCredits = new QLabel(MenuGra);
-        labelMenuGraCredits->setObjectName("labelMenuGraCredits");
+        labelMenuGraCredits->setObjectName(QString::fromUtf8("labelMenuGraCredits"));
 
         horizontalLayout_14->addWidget(labelMenuGraCredits);
 
@@ -160,9 +166,9 @@ public:
         verticalLayout->addLayout(horizontalLayout);
 
         horizontalLayout_7 = new QHBoxLayout();
-        horizontalLayout_7->setObjectName("horizontalLayout_7");
+        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
         pushButtonGra1 = new QPushButton(MenuGra);
-        pushButtonGra1->setObjectName("pushButtonGra1");
+        pushButtonGra1->setObjectName(QString::fromUtf8("pushButtonGra1"));
         pushButtonGra1->setMinimumSize(QSize(50, 100));
 
         horizontalLayout_7->addWidget(pushButtonGra1);
@@ -172,7 +178,7 @@ public:
         horizontalLayout_7->addItem(horizontalSpacer_3);
 
         pushButtonGra2 = new QPushButton(MenuGra);
-        pushButtonGra2->setObjectName("pushButtonGra2");
+        pushButtonGra2->setObjectName(QString::fromUtf8("pushButtonGra2"));
         pushButtonGra2->setMinimumSize(QSize(50, 100));
 
         horizontalLayout_7->addWidget(pushButtonGra2);
@@ -181,13 +187,13 @@ public:
         verticalLayout->addLayout(horizontalLayout_7);
 
         horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName("horizontalLayout_6");
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
         horizontalSpacer_4 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
 
         horizontalLayout_6->addItem(horizontalSpacer_4);
 
         pushButtonGra3 = new QPushButton(MenuGra);
-        pushButtonGra3->setObjectName("pushButtonGra3");
+        pushButtonGra3->setObjectName(QString::fromUtf8("pushButtonGra3"));
         pushButtonGra3->setMinimumSize(QSize(50, 100));
 
         horizontalLayout_6->addWidget(pushButtonGra3);
@@ -203,25 +209,43 @@ public:
         horizontalLayout_2->addLayout(verticalLayout);
 
         stackedWidget->addWidget(MenuGra);
+        Gra1SlotMachine = new QWidget();
+        Gra1SlotMachine->setObjectName(QString::fromUtf8("Gra1SlotMachine"));
+        BackToMainMenu = new QPushButton(Gra1SlotMachine);
+        BackToMainMenu->setObjectName(QString::fromUtf8("BackToMainMenu"));
+        BackToMainMenu->setGeometry(QRect(10, 10, 80, 24));
+        spinButton = new QPushButton(Gra1SlotMachine);
+        spinButton->setObjectName(QString::fromUtf8("spinButton"));
+        spinButton->setGeometry(QRect(230, 280, 111, 71));
+        slotMachineDrum1 = new QLabel(Gra1SlotMachine);
+        slotMachineDrum1->setObjectName(QString::fromUtf8("slotMachineDrum1"));
+        slotMachineDrum1->setGeometry(QRect(0, 60, 200, 197));
+        slotMachineDrum2 = new QLabel(Gra1SlotMachine);
+        slotMachineDrum2->setObjectName(QString::fromUtf8("slotMachineDrum2"));
+        slotMachineDrum2->setGeometry(QRect(200, 60, 200, 197));
+        slotMachineDrum3 = new QLabel(Gra1SlotMachine);
+        slotMachineDrum3->setObjectName(QString::fromUtf8("slotMachineDrum3"));
+        slotMachineDrum3->setGeometry(QRect(400, 60, 200, 197));
+        stackedWidget->addWidget(Gra1SlotMachine);
         Start = new QWidget();
-        Start->setObjectName("Start");
+        Start->setObjectName(QString::fromUtf8("Start"));
         gridLayout_2 = new QGridLayout(Start);
-        gridLayout_2->setObjectName("gridLayout_2");
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
         horizontalLayout_3 = new QHBoxLayout();
-        horizontalLayout_3->setObjectName("horizontalLayout_3");
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
         verticalLayout_4 = new QVBoxLayout();
-        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
         horizontalLayout_10 = new QHBoxLayout();
-        horizontalLayout_10->setObjectName("horizontalLayout_10");
+        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
         horizontalLayout_12 = new QHBoxLayout();
-        horizontalLayout_12->setObjectName("horizontalLayout_12");
+        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
 
         horizontalLayout_10->addLayout(horizontalLayout_12);
 
         horizontalLayout_11 = new QHBoxLayout();
-        horizontalLayout_11->setObjectName("horizontalLayout_11");
+        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
         horizontalLayout_13 = new QHBoxLayout();
-        horizontalLayout_13->setObjectName("horizontalLayout_13");
+        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
 
         horizontalLayout_11->addLayout(horizontalLayout_13);
 
@@ -233,17 +257,17 @@ public:
         horizontalLayout_10->addItem(horizontalSpacer_2);
 
         verticalLayout_13 = new QVBoxLayout();
-        verticalLayout_13->setObjectName("verticalLayout_13");
+        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
         horizontalLayout_17 = new QHBoxLayout();
-        horizontalLayout_17->setObjectName("horizontalLayout_17");
+        horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
         label_3 = new QLabel(Start);
-        label_3->setObjectName("label_3");
+        label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setMaximumSize(QSize(100, 30));
 
         horizontalLayout_17->addWidget(label_3);
 
         labelUserName = new QLabel(Start);
-        labelUserName->setObjectName("labelUserName");
+        labelUserName->setObjectName(QString::fromUtf8("labelUserName"));
         labelUserName->setMaximumSize(QSize(100, 30));
 
         horizontalLayout_17->addWidget(labelUserName);
@@ -252,15 +276,15 @@ public:
         verticalLayout_13->addLayout(horizontalLayout_17);
 
         horizontalLayout_16 = new QHBoxLayout();
-        horizontalLayout_16->setObjectName("horizontalLayout_16");
+        horizontalLayout_16->setObjectName(QString::fromUtf8("horizontalLayout_16"));
         label_5 = new QLabel(Start);
-        label_5->setObjectName("label_5");
+        label_5->setObjectName(QString::fromUtf8("label_5"));
         label_5->setMaximumSize(QSize(100, 30));
 
         horizontalLayout_16->addWidget(label_5);
 
         labelCredits = new QLabel(Start);
-        labelCredits->setObjectName("labelCredits");
+        labelCredits->setObjectName(QString::fromUtf8("labelCredits"));
         labelCredits->setMaximumSize(QSize(100, 30));
 
         horizontalLayout_16->addWidget(labelCredits);
@@ -275,19 +299,19 @@ public:
         verticalLayout_4->addLayout(horizontalLayout_10);
 
         horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setObjectName("horizontalLayout_8");
+        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
         verticalLayout_6 = new QVBoxLayout();
-        verticalLayout_6->setObjectName("verticalLayout_6");
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
         verticalLayout_12 = new QVBoxLayout();
-        verticalLayout_12->setObjectName("verticalLayout_12");
+        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
         label = new QLabel(Start);
-        label->setObjectName("label");
+        label->setObjectName(QString::fromUtf8("label"));
         label->setMaximumSize(QSize(100, 30));
 
         verticalLayout_12->addWidget(label);
 
         textLogin = new QTextEdit(Start);
-        textLogin->setObjectName("textLogin");
+        textLogin->setObjectName(QString::fromUtf8("textLogin"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -301,9 +325,9 @@ public:
         verticalLayout_6->addLayout(verticalLayout_12);
 
         verticalLayout_11 = new QVBoxLayout();
-        verticalLayout_11->setObjectName("verticalLayout_11");
+        verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
         label_2 = new QLabel(Start);
-        label_2->setObjectName("label_2");
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
@@ -314,7 +338,7 @@ public:
         verticalLayout_11->addWidget(label_2);
 
         textPassword = new QTextEdit(Start);
-        textPassword->setObjectName("textPassword");
+        textPassword->setObjectName(QString::fromUtf8("textPassword"));
         sizePolicy.setHeightForWidth(textPassword->sizePolicy().hasHeightForWidth());
         textPassword->setSizePolicy(sizePolicy);
         textPassword->setMaximumSize(QSize(100, 30));
@@ -322,7 +346,7 @@ public:
         verticalLayout_11->addWidget(textPassword);
 
         pushButtonLogIn = new QPushButton(Start);
-        pushButtonLogIn->setObjectName("pushButtonLogIn");
+        pushButtonLogIn->setObjectName(QString::fromUtf8("pushButtonLogIn"));
         sizePolicy.setHeightForWidth(pushButtonLogIn->sizePolicy().hasHeightForWidth());
         pushButtonLogIn->setSizePolicy(sizePolicy);
         pushButtonLogIn->setMaximumSize(QSize(100, 30));
@@ -340,7 +364,7 @@ public:
         horizontalLayout_8->addItem(horizontalSpacer);
 
         verticalLayout_7 = new QVBoxLayout();
-        verticalLayout_7->setObjectName("verticalLayout_7");
+        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
 
         horizontalLayout_8->addLayout(verticalLayout_7);
 
@@ -348,13 +372,13 @@ public:
         verticalLayout_4->addLayout(horizontalLayout_8);
 
         horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setObjectName("horizontalLayout_5");
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
         horizontalSpacer_7 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
 
         horizontalLayout_5->addItem(horizontalSpacer_7);
 
         pushButtonRegister = new QPushButton(Start);
-        pushButtonRegister->setObjectName("pushButtonRegister");
+        pushButtonRegister->setObjectName(QString::fromUtf8("pushButtonRegister"));
 
         horizontalLayout_5->addWidget(pushButtonRegister);
 
@@ -377,12 +401,12 @@ public:
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
-        statusbar->setObjectName("statusbar");
+        statusbar->setObjectName(QString::fromUtf8("statusbar"));
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(1);
+        stackedWidget->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -399,6 +423,11 @@ public:
         pushButtonGra1->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
         pushButtonGra2->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
         pushButtonGra3->setText(QCoreApplication::translate("MainWindow", "Gra3", nullptr));
+        BackToMainMenu->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
+        spinButton->setText(QCoreApplication::translate("MainWindow", "SPIN", nullptr));
+        slotMachineDrum1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        slotMachineDrum2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        slotMachineDrum3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));

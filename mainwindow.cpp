@@ -9,6 +9,7 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->us.uploadFiles();
+
 }
 
 MainWindow::~MainWindow()
@@ -55,7 +56,7 @@ void MainWindow::on_pushButtonlogout_clicked()
 
 void MainWindow::on_pushButtonGra1_clicked()
 {
-
+    ui->stackedWidget->setCurrentWidget(ui->Gra1SlotMachine);
 }
 
 
@@ -70,5 +71,14 @@ void MainWindow::on_pushButtonGra3_clicked()
 
 }
 
+void MainWindow::on_BackToMainMenu_clicked()
+{
+    ui->stackedWidget->setCurrentWidget(ui->MenuGra);
+}
 
+void MainWindow::on_spinButton_clicked()
+{
+    slotmachine sm(this,ui->slotMachineDrum1,ui->slotMachineDrum2,ui->slotMachineDrum3);
+    sm.startGame();
+}
 

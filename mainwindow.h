@@ -4,6 +4,7 @@
 #include <user.h>
 #include <QMainWindow>
 #include <QMessageBox>
+#include "slotmachine.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -16,6 +17,7 @@ private:
     Ui::MainWindow *ui;
     User us;
     Register *m_okno;
+
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -27,5 +29,8 @@ public slots:
     void on_pushButtonGra2_clicked();
     void on_pushButtonGra3_clicked();
     void on_pushButtonlogout_clicked();
+private slots:
+    void on_BackToMainMenu_clicked();
+    void on_spinButton_clicked();
 };
 #endif // MAINWINDOW_H

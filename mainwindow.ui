@@ -27,7 +27,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="MenuGra">
        <layout class="QHBoxLayout" name="horizontalLayout_2">
@@ -198,6 +198,73 @@
          </layout>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="Gra1SlotMachine">
+       <widget class="QPushButton" name="BackToMainMenu">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>80</width>
+          <height>24</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="spinButton">
+        <property name="geometry">
+         <rect>
+          <x>230</x>
+          <y>280</y>
+          <width>111</width>
+          <height>71</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>SPIN</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="slotMachineDrum1">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>60</y>
+          <width>200</width>
+          <height>197</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="slotMachineDrum2">
+        <property name="geometry">
+         <rect>
+          <x>200</x>
+          <y>60</y>
+          <width>200</width>
+          <height>197</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="slotMachineDrum3">
+        <property name="geometry">
+         <rect>
+          <x>400</x>
+          <y>60</y>
+          <width>200</width>
+          <height>197</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>TextLabel</string>
+        </property>
+       </widget>
       </widget>
       <widget class="QWidget" name="Start">
        <layout class="QGridLayout" name="gridLayout_2">

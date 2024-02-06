@@ -12,12 +12,15 @@ SOURCES += \
     main.cpp \
     mainwindow.cpp \
     register.cpp \
+    slotmachine.cpp \
     user.cpp \
     usertype.cpp
 
 HEADERS += \
+    SeedMaker.h \
     mainwindow.h \
     register.h \
+    slotmachine.h \
     user.h \
     usertype.h
 
