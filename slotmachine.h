@@ -22,6 +22,8 @@ private:
     int reel2Position;
     int reel3Position;
     int reelSpeed;
+    int spinsLeft;
+    int gameResult;
 
     void setupReelIcons();
     void updateUi();
@@ -32,7 +34,7 @@ public:
                 QLabel* reel3 = nullptr);
     ~slotmachine();
 
-    void startGame();
+    void startGame(int bet);
 signals:
     void gameFinished(int result);
 private slots:

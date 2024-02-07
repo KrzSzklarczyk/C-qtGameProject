@@ -15,7 +15,9 @@ slotmachine::slotmachine(QWidget* parent,
       reel1Position(0),
       reel2Position(0),
       reel3Position(0),
-      reelSpeed(100)
+      reelSpeed(100),
+      spinsLeft(30),
+      gameResult(0)
 {
     setupReelIcons();
     connect(reelTimer, &QTimer::timeout, this, &slotmachine::updateReels);
@@ -26,9 +28,10 @@ slotmachine::~slotmachine()
     delete reelTimer;
 }
 
-void slotmachine::startGame()
+void slotmachine::startGame(int bet)
 {
     reelTimer->start(reelSpeed);
+    gameResult = bet;
 }
 
 void slotmachine::updateReels()
@@ -37,17 +40,38 @@ void slotmachine::updateReels()
     reel2Position = prng.bounded(6);
     reel3Position = prng.bounded(6);
 
-    qDebug() << "wartosci reel1,2,3 w updateReels:"
-             << reel1Position << ","
-             << reel2Position << ","
-             << reel3Position;
-
     updateUi();
 
-    if (reel1Position == 0 && reel2Position == 0 && reel3Position == 0) {
+    if (spinsLeft < 1) {
+        spinsLeft = 30;
         reelTimer->stop();
-        emit gameFinished(/* JAKIŚ WYNIK */0);
+        if(reel1Position == reel2Position && reel2Position == reel3Position){
+            if(gameResult!=0){
+                switch(reel1Position){
+                case 1:
+                    gameResult+=50;
+                    break;
+                case 2:
+                    gameResult*=2;
+                    break;
+                case 3:
+                    gameResult*=4;
+                    break;
+                case 4:
+                    gameResult+=100;
+                    break;
+                case 5:
+                    gameResult+=200;
+                    break;
+                case 6:
+                    gameResult*=7;
+                    break;
+                }
+            }
+        }
+        emit gameFinished(gameResult);
     }
+    spinsLeft--;
 }
 
 void slotmachine::setupReelIcons()

@@ -17,7 +17,7 @@ private:
     Ui::MainWindow *ui;
     User us;
     Register *m_okno;
-
+    slotmachine* sm;
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();

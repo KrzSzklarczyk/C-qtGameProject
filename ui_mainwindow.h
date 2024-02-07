@@ -59,6 +59,8 @@ public:
     QLabel *slotMachineDrum1;
     QLabel *slotMachineDrum2;
     QLabel *slotMachineDrum3;
+    QTextEdit *betSlotMachine;
+    QLabel *label_4;
     QWidget *Start;
     QGridLayout *gridLayout_2;
     QHBoxLayout *horizontalLayout_3;
@@ -226,6 +228,12 @@ public:
         slotMachineDrum3 = new QLabel(Gra1SlotMachine);
         slotMachineDrum3->setObjectName(QString::fromUtf8("slotMachineDrum3"));
         slotMachineDrum3->setGeometry(QRect(400, 60, 200, 197));
+        betSlotMachine = new QTextEdit(Gra1SlotMachine);
+        betSlotMachine->setObjectName(QString::fromUtf8("betSlotMachine"));
+        betSlotMachine->setGeometry(QRect(90, 300, 101, 31));
+        label_4 = new QLabel(Gra1SlotMachine);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(60, 300, 31, 31));
         stackedWidget->addWidget(Gra1SlotMachine);
         Start = new QWidget();
         Start->setObjectName(QString::fromUtf8("Start"));
@@ -428,6 +436,7 @@ public:
         slotMachineDrum1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         slotMachineDrum2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         slotMachineDrum3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_4->setText(QCoreApplication::translate("MainWindow", "BET", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));

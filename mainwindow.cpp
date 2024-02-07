@@ -9,7 +9,6 @@ MainWindow::MainWindow(QWidget *parent)
 {
     ui->setupUi(this);
     this->us.uploadFiles();
-
 }
 
 MainWindow::~MainWindow()
@@ -57,16 +56,11 @@ void MainWindow::on_pushButtonlogout_clicked()
 void MainWindow::on_pushButtonGra1_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->Gra1SlotMachine);
+    sm = new slotmachine(this,ui->slotMachineDrum1,ui->slotMachineDrum2,ui->slotMachineDrum3);
 }
 
 
 void MainWindow::on_pushButtonGra2_clicked()
-{
-
-}
-
-
-void MainWindow::on_pushButtonGra3_clicked()
 {
 
 }
@@ -78,7 +72,12 @@ void MainWindow::on_BackToMainMenu_clicked()
 
 void MainWindow::on_spinButton_clicked()
 {
-    slotmachine sm(this,ui->slotMachineDrum1,ui->slotMachineDrum2,ui->slotMachineDrum3);
-    sm.startGame();
+    QString text = ui->betSlotMachine->toPlainText();
+    bool isInteger;
+    int number = text.toInt(&isInteger);
+    if(isInteger && number > 0){
+        // ODJĄĆ UŻYTKOWNIKOWI KREDYTY O ILOŚĆ ZAWARTĄ W "number"
+        sm->startGame(number);
+    }
 }
 
