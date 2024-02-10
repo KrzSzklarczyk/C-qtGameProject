@@ -57,8 +57,8 @@ void MainWindow::on_pushButtonGra1_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->Gra1SlotMachine);
     sm = new slotmachine(this,ui->slotMachineDrum1,ui->slotMachineDrum2,ui->slotMachineDrum3);
+    connect(sm,&slotmachine::gameFinished,this,&MainWindow::handleGameFinished);
 }
-
 
 void MainWindow::on_pushButtonGra2_clicked()
 {
@@ -76,8 +76,11 @@ void MainWindow::on_spinButton_clicked()
     bool isInteger;
     int number = text.toInt(&isInteger);
     if(isInteger && number > 0){
-        // ODJĄĆ UŻYTKOWNIKOWI KREDYTY O ILOŚĆ ZAWARTĄ W "number"
+        us.SubstractCredits(number);
         sm->startGame(number);
     }
 }
 
+void MainWindow::handleGameFinished(int result){
+    qDebug()<<"handleGameFinished";
+}

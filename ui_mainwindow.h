@@ -49,10 +49,6 @@ public:
     QPushButton *pushButtonGra1;
     QSpacerItem *horizontalSpacer_3;
     QPushButton *pushButtonGra2;
-    QHBoxLayout *horizontalLayout_6;
-    QSpacerItem *horizontalSpacer_4;
-    QPushButton *pushButtonGra3;
-    QSpacerItem *horizontalSpacer_5;
     QWidget *Gra1SlotMachine;
     QPushButton *BackToMainMenu;
     QPushButton *spinButton;
@@ -187,25 +183,6 @@ public:
 
 
         verticalLayout->addLayout(horizontalLayout_7);
-
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
-        horizontalSpacer_4 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_4);
-
-        pushButtonGra3 = new QPushButton(MenuGra);
-        pushButtonGra3->setObjectName(QString::fromUtf8("pushButtonGra3"));
-        pushButtonGra3->setMinimumSize(QSize(50, 100));
-
-        horizontalLayout_6->addWidget(pushButtonGra3);
-
-        horizontalSpacer_5 = new QSpacerItem(80, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_5);
-
-
-        verticalLayout->addLayout(horizontalLayout_6);
 
 
         horizontalLayout_2->addLayout(verticalLayout);
@@ -430,7 +407,6 @@ public:
         labelMenuGraCredits->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         pushButtonGra1->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
         pushButtonGra2->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
-        pushButtonGra3->setText(QCoreApplication::translate("MainWindow", "Gra3", nullptr));
         BackToMainMenu->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
         spinButton->setText(QCoreApplication::translate("MainWindow", "SPIN", nullptr));
         slotMachineDrum1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));

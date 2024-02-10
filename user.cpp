@@ -91,3 +91,10 @@ int User::getCredits()
     return this->m_Credits;
 }
 
+void User::AddCredits(int addC){
+    this->m_Credits+=addC;
+}
+
+void User::SubstractCredits(int subC){
+    this->m_Credits-=subC;
+}

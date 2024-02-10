@@ -24,6 +24,8 @@ public:
     QString getUserName();
     QList<UserType> getUserList();
     int getCredits();
+    void AddCredits(int addC);
+    void SubstractCredits(int subC);
     bool LogIn(QString log, QString pass);
     bool Reg(QString log, QString pass);
 };

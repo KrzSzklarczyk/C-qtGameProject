@@ -27,10 +27,10 @@ public slots:
     void on_pushButtonRegister_clicked();
     void on_pushButtonGra1_clicked();
     void on_pushButtonGra2_clicked();
-    void on_pushButtonGra3_clicked();
     void on_pushButtonlogout_clicked();
 private slots:
     void on_BackToMainMenu_clicked();
     void on_spinButton_clicked();
+    void handleGameFinished(int result);
 };
 #endif // MAINWINDOW_H
