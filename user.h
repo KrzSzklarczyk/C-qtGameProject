@@ -28,6 +28,7 @@ public:
     void SubstractCredits(int subC);
     bool LogIn(QString log, QString pass);
     bool Reg(QString log, QString pass);
+    void UpdateUser();
 };
 
 #endif // USER_H
