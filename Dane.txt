@@ -1,1 +1,2 @@
 DisStream;123;100
+nowy;123;10

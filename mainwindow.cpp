@@ -46,6 +46,7 @@ void MainWindow::setGUI()
 {
     ui->labelMenuGraUserName->setText(us.getUserName());
     ui->labelMenuGraCredits->setText(QString::number(us.getCredits()));
+    ui->Label_Gra1Credits->setText(QString::number(us.getCredits()));
 }
 
 void MainWindow::on_pushButtonlogout_clicked()
@@ -58,11 +59,12 @@ void MainWindow::on_pushButtonGra1_clicked()
     ui->stackedWidget->setCurrentWidget(ui->Gra1SlotMachine);
     sm = new slotmachine(this,ui->slotMachineDrum1,ui->slotMachineDrum2,ui->slotMachineDrum3);
     connect(sm,&slotmachine::gameFinished,this,&MainWindow::handleGameFinished);
+    this->setGUI();
 }
 
 void MainWindow::on_pushButtonGra2_clicked()
 {
-
+    ui->stackedWidget->setCurrentWidget(ui->Gra2);
 }
 
 void MainWindow::on_BackToMainMenu_clicked()
@@ -75,12 +77,35 @@ void MainWindow::on_spinButton_clicked()
     QString text = ui->betSlotMachine->toPlainText();
     bool isInteger;
     int number = text.toInt(&isInteger);
-    if(isInteger && number > 0){
+    if((isInteger && number > 0) && us.getCredits() >= number){
         us.SubstractCredits(number);
+        this->setGUI();
         sm->startGame(number);
+    }
+    else{
+        QMessageBox mesBox;
+        mesBox.setText("Nieprawidlowa watrosc lub za malo kredytow");
+        mesBox.exec();
     }
 }
 
 void MainWindow::handleGameFinished(int result){
-    qDebug()<<"handleGameFinished";
+    us.AddCredits(result);
+    this->setGUI();
+    if(result > 0){
+        QMessageBox mesBox;
+        mesBox.setText("Udalo ci sie wygrac!");
+        mesBox.exec();
+    }
+    else{
+        QMessageBox mesBox;
+        mesBox.setText("Nastepnym razem sie uda");
+        mesBox.exec();
+    }
 }
+
+void MainWindow::on_BackToMainMenu_2_clicked()
+{
+    ui->stackedWidget->setCurrentWidget(ui->MenuGra);
+}
+

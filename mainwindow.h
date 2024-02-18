@@ -32,5 +32,6 @@ private slots:
     void on_BackToMainMenu_clicked();
     void on_spinButton_clicked();
     void handleGameFinished(int result);
+    void on_BackToMainMenu_2_clicked();
 };
 #endif // MAINWINDOW_H

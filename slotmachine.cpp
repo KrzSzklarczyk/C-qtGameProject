@@ -69,6 +69,9 @@ void slotmachine::updateReels()
                 }
             }
         }
+        else {
+            gameResult = 0;
+        }
         emit gameFinished(gameResult);
     }
     spinsLeft--;

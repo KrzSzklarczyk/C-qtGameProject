@@ -57,6 +57,10 @@ public:
     QLabel *slotMachineDrum3;
     QTextEdit *betSlotMachine;
     QLabel *label_4;
+    QLabel *Label_Gra1Credits;
+    QLabel *label_8;
+    QWidget *Gra2;
+    QPushButton *BackToMainMenu_2;
     QWidget *Start;
     QGridLayout *gridLayout_2;
     QHBoxLayout *horizontalLayout_3;
@@ -211,7 +215,19 @@ public:
         label_4 = new QLabel(Gra1SlotMachine);
         label_4->setObjectName(QString::fromUtf8("label_4"));
         label_4->setGeometry(QRect(60, 300, 31, 31));
+        Label_Gra1Credits = new QLabel(Gra1SlotMachine);
+        Label_Gra1Credits->setObjectName(QString::fromUtf8("Label_Gra1Credits"));
+        Label_Gra1Credits->setGeometry(QRect(460, 10, 91, 21));
+        label_8 = new QLabel(Gra1SlotMachine);
+        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setGeometry(QRect(420, 10, 41, 21));
         stackedWidget->addWidget(Gra1SlotMachine);
+        Gra2 = new QWidget();
+        Gra2->setObjectName(QString::fromUtf8("Gra2"));
+        BackToMainMenu_2 = new QPushButton(Gra2);
+        BackToMainMenu_2->setObjectName(QString::fromUtf8("BackToMainMenu_2"));
+        BackToMainMenu_2->setGeometry(QRect(20, 10, 80, 24));
+        stackedWidget->addWidget(Gra2);
         Start = new QWidget();
         Start->setObjectName(QString::fromUtf8("Start"));
         gridLayout_2 = new QGridLayout(Start);
@@ -391,7 +407,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(2);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -413,6 +429,9 @@ public:
         slotMachineDrum2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         slotMachineDrum3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "BET", nullptr));
+        Label_Gra1Credits->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
+        BackToMainMenu_2->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
