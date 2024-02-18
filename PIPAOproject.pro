@@ -11,6 +11,7 @@ CONFIG += c++17
 SOURCES += \
     main.cpp \
     mainwindow.cpp \
+    millionaire.cpp \
     register.cpp \
     slotmachine.cpp \
     user.cpp \
@@ -19,6 +20,7 @@ SOURCES += \
 HEADERS += \
     SeedMaker.h \
     mainwindow.h \
+    millionaire.h \
     register.h \
     slotmachine.h \
     user.h \

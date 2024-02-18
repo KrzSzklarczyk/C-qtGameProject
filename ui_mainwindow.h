@@ -50,17 +50,30 @@ public:
     QSpacerItem *horizontalSpacer_3;
     QPushButton *pushButtonGra2;
     QWidget *Gra1SlotMachine;
+    QWidget *verticalLayoutWidget_2;
+    QVBoxLayout *verticalLayout_8;
+    QHBoxLayout *horizontalLayout_15;
     QPushButton *BackToMainMenu;
-    QPushButton *spinButton;
-    QLabel *slotMachineDrum1;
-    QLabel *slotMachineDrum2;
-    QLabel *slotMachineDrum3;
-    QTextEdit *betSlotMachine;
-    QLabel *label_4;
-    QLabel *Label_Gra1Credits;
+    QHBoxLayout *horizontalLayout_18;
     QLabel *label_8;
+    QLabel *Label_Gra1Credits;
+    QHBoxLayout *horizontalLayout_6;
+    QLabel *slotMachineDrum2;
+    QLabel *slotMachineDrum1;
+    QLabel *slotMachineDrum3;
+    QHBoxLayout *horizontalLayout_4;
+    QLabel *label_4;
+    QTextEdit *betSlotMachine;
+    QPushButton *spinButton;
     QWidget *Gra2;
     QPushButton *BackToMainMenu_2;
+    QLabel *label_Millionaire_Pytanie;
+    QWidget *verticalLayoutWidget;
+    QVBoxLayout *verticalLayout_5;
+    QPushButton *pushButton_Millionaire_ODP_A;
+    QPushButton *pushButton_Millionaire_ODP_B;
+    QPushButton *pushButton_Millionaire_ODP_C;
+    QPushButton *pushButton_Millionaire_ODP_D;
     QWidget *Start;
     QGridLayout *gridLayout_2;
     QHBoxLayout *horizontalLayout_3;
@@ -194,39 +207,142 @@ public:
         stackedWidget->addWidget(MenuGra);
         Gra1SlotMachine = new QWidget();
         Gra1SlotMachine->setObjectName(QString::fromUtf8("Gra1SlotMachine"));
-        BackToMainMenu = new QPushButton(Gra1SlotMachine);
+        verticalLayoutWidget_2 = new QWidget(Gra1SlotMachine);
+        verticalLayoutWidget_2->setObjectName(QString::fromUtf8("verticalLayoutWidget_2"));
+        verticalLayoutWidget_2->setGeometry(QRect(20, 10, 551, 331));
+        verticalLayout_8 = new QVBoxLayout(verticalLayoutWidget_2);
+        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
+        verticalLayout_8->setContentsMargins(0, 0, 0, 0);
+        horizontalLayout_15 = new QHBoxLayout();
+        horizontalLayout_15->setObjectName(QString::fromUtf8("horizontalLayout_15"));
+        BackToMainMenu = new QPushButton(verticalLayoutWidget_2);
         BackToMainMenu->setObjectName(QString::fromUtf8("BackToMainMenu"));
-        BackToMainMenu->setGeometry(QRect(10, 10, 80, 24));
-        spinButton = new QPushButton(Gra1SlotMachine);
-        spinButton->setObjectName(QString::fromUtf8("spinButton"));
-        spinButton->setGeometry(QRect(230, 280, 111, 71));
-        slotMachineDrum1 = new QLabel(Gra1SlotMachine);
-        slotMachineDrum1->setObjectName(QString::fromUtf8("slotMachineDrum1"));
-        slotMachineDrum1->setGeometry(QRect(0, 60, 200, 197));
-        slotMachineDrum2 = new QLabel(Gra1SlotMachine);
-        slotMachineDrum2->setObjectName(QString::fromUtf8("slotMachineDrum2"));
-        slotMachineDrum2->setGeometry(QRect(200, 60, 200, 197));
-        slotMachineDrum3 = new QLabel(Gra1SlotMachine);
-        slotMachineDrum3->setObjectName(QString::fromUtf8("slotMachineDrum3"));
-        slotMachineDrum3->setGeometry(QRect(400, 60, 200, 197));
-        betSlotMachine = new QTextEdit(Gra1SlotMachine);
-        betSlotMachine->setObjectName(QString::fromUtf8("betSlotMachine"));
-        betSlotMachine->setGeometry(QRect(90, 300, 101, 31));
-        label_4 = new QLabel(Gra1SlotMachine);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(60, 300, 31, 31));
-        Label_Gra1Credits = new QLabel(Gra1SlotMachine);
-        Label_Gra1Credits->setObjectName(QString::fromUtf8("Label_Gra1Credits"));
-        Label_Gra1Credits->setGeometry(QRect(460, 10, 91, 21));
-        label_8 = new QLabel(Gra1SlotMachine);
+
+        horizontalLayout_15->addWidget(BackToMainMenu);
+
+        horizontalLayout_18 = new QHBoxLayout();
+        horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
+        label_8 = new QLabel(verticalLayoutWidget_2);
         label_8->setObjectName(QString::fromUtf8("label_8"));
-        label_8->setGeometry(QRect(420, 10, 41, 21));
+
+        horizontalLayout_18->addWidget(label_8);
+
+        Label_Gra1Credits = new QLabel(verticalLayoutWidget_2);
+        Label_Gra1Credits->setObjectName(QString::fromUtf8("Label_Gra1Credits"));
+
+        horizontalLayout_18->addWidget(Label_Gra1Credits);
+
+
+        horizontalLayout_15->addLayout(horizontalLayout_18);
+
+
+        verticalLayout_8->addLayout(horizontalLayout_15);
+
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        slotMachineDrum2 = new QLabel(verticalLayoutWidget_2);
+        slotMachineDrum2->setObjectName(QString::fromUtf8("slotMachineDrum2"));
+        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        sizePolicy.setHorizontalStretch(0);
+        sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(slotMachineDrum2->sizePolicy().hasHeightForWidth());
+        slotMachineDrum2->setSizePolicy(sizePolicy);
+
+        horizontalLayout_6->addWidget(slotMachineDrum2);
+
+        slotMachineDrum1 = new QLabel(verticalLayoutWidget_2);
+        slotMachineDrum1->setObjectName(QString::fromUtf8("slotMachineDrum1"));
+        sizePolicy.setHeightForWidth(slotMachineDrum1->sizePolicy().hasHeightForWidth());
+        slotMachineDrum1->setSizePolicy(sizePolicy);
+
+        horizontalLayout_6->addWidget(slotMachineDrum1);
+
+        slotMachineDrum3 = new QLabel(verticalLayoutWidget_2);
+        slotMachineDrum3->setObjectName(QString::fromUtf8("slotMachineDrum3"));
+        sizePolicy.setHeightForWidth(slotMachineDrum3->sizePolicy().hasHeightForWidth());
+        slotMachineDrum3->setSizePolicy(sizePolicy);
+
+        horizontalLayout_6->addWidget(slotMachineDrum3);
+
+
+        verticalLayout_8->addLayout(horizontalLayout_6);
+
+        horizontalLayout_4 = new QHBoxLayout();
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        label_4 = new QLabel(verticalLayoutWidget_2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
+        sizePolicy1.setHeightForWidth(label_4->sizePolicy().hasHeightForWidth());
+        label_4->setSizePolicy(sizePolicy1);
+
+        horizontalLayout_4->addWidget(label_4);
+
+        betSlotMachine = new QTextEdit(verticalLayoutWidget_2);
+        betSlotMachine->setObjectName(QString::fromUtf8("betSlotMachine"));
+        QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Ignored);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(betSlotMachine->sizePolicy().hasHeightForWidth());
+        betSlotMachine->setSizePolicy(sizePolicy2);
+
+        horizontalLayout_4->addWidget(betSlotMachine);
+
+        spinButton = new QPushButton(verticalLayoutWidget_2);
+        spinButton->setObjectName(QString::fromUtf8("spinButton"));
+
+        horizontalLayout_4->addWidget(spinButton);
+
+
+        verticalLayout_8->addLayout(horizontalLayout_4);
+
         stackedWidget->addWidget(Gra1SlotMachine);
         Gra2 = new QWidget();
         Gra2->setObjectName(QString::fromUtf8("Gra2"));
         BackToMainMenu_2 = new QPushButton(Gra2);
         BackToMainMenu_2->setObjectName(QString::fromUtf8("BackToMainMenu_2"));
         BackToMainMenu_2->setGeometry(QRect(20, 10, 80, 24));
+        label_Millionaire_Pytanie = new QLabel(Gra2);
+        label_Millionaire_Pytanie->setObjectName(QString::fromUtf8("label_Millionaire_Pytanie"));
+        label_Millionaire_Pytanie->setGeometry(QRect(110, 10, 421, 81));
+        verticalLayoutWidget = new QWidget(Gra2);
+        verticalLayoutWidget->setObjectName(QString::fromUtf8("verticalLayoutWidget"));
+        verticalLayoutWidget->setGeometry(QRect(50, 120, 391, 201));
+        verticalLayout_5 = new QVBoxLayout(verticalLayoutWidget);
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        verticalLayout_5->setContentsMargins(0, 0, 0, 0);
+        pushButton_Millionaire_ODP_A = new QPushButton(verticalLayoutWidget);
+        pushButton_Millionaire_ODP_A->setObjectName(QString::fromUtf8("pushButton_Millionaire_ODP_A"));
+        QSizePolicy sizePolicy3(QSizePolicy::Minimum, QSizePolicy::Expanding);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(pushButton_Millionaire_ODP_A->sizePolicy().hasHeightForWidth());
+        pushButton_Millionaire_ODP_A->setSizePolicy(sizePolicy3);
+
+        verticalLayout_5->addWidget(pushButton_Millionaire_ODP_A);
+
+        pushButton_Millionaire_ODP_B = new QPushButton(verticalLayoutWidget);
+        pushButton_Millionaire_ODP_B->setObjectName(QString::fromUtf8("pushButton_Millionaire_ODP_B"));
+        sizePolicy3.setHeightForWidth(pushButton_Millionaire_ODP_B->sizePolicy().hasHeightForWidth());
+        pushButton_Millionaire_ODP_B->setSizePolicy(sizePolicy3);
+
+        verticalLayout_5->addWidget(pushButton_Millionaire_ODP_B);
+
+        pushButton_Millionaire_ODP_C = new QPushButton(verticalLayoutWidget);
+        pushButton_Millionaire_ODP_C->setObjectName(QString::fromUtf8("pushButton_Millionaire_ODP_C"));
+        sizePolicy3.setHeightForWidth(pushButton_Millionaire_ODP_C->sizePolicy().hasHeightForWidth());
+        pushButton_Millionaire_ODP_C->setSizePolicy(sizePolicy3);
+
+        verticalLayout_5->addWidget(pushButton_Millionaire_ODP_C);
+
+        pushButton_Millionaire_ODP_D = new QPushButton(verticalLayoutWidget);
+        pushButton_Millionaire_ODP_D->setObjectName(QString::fromUtf8("pushButton_Millionaire_ODP_D"));
+        sizePolicy3.setHeightForWidth(pushButton_Millionaire_ODP_D->sizePolicy().hasHeightForWidth());
+        pushButton_Millionaire_ODP_D->setSizePolicy(sizePolicy3);
+
+        verticalLayout_5->addWidget(pushButton_Millionaire_ODP_D);
+
         stackedWidget->addWidget(Gra2);
         Start = new QWidget();
         Start->setObjectName(QString::fromUtf8("Start"));
@@ -313,11 +429,11 @@ public:
 
         textLogin = new QTextEdit(Start);
         textLogin->setObjectName(QString::fromUtf8("textLogin"));
-        QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy.setHorizontalStretch(0);
-        sizePolicy.setVerticalStretch(0);
-        sizePolicy.setHeightForWidth(textLogin->sizePolicy().hasHeightForWidth());
-        textLogin->setSizePolicy(sizePolicy);
+        QSizePolicy sizePolicy4(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(textLogin->sizePolicy().hasHeightForWidth());
+        textLogin->setSizePolicy(sizePolicy4);
         textLogin->setMaximumSize(QSize(100, 30));
 
         verticalLayout_12->addWidget(textLogin);
@@ -329,27 +445,27 @@ public:
         verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
         label_2 = new QLabel(Start);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        QSizePolicy sizePolicy1(QSizePolicy::Minimum, QSizePolicy::Minimum);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy1);
+        QSizePolicy sizePolicy5(QSizePolicy::Minimum, QSizePolicy::Minimum);
+        sizePolicy5.setHorizontalStretch(0);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy5);
         label_2->setMaximumSize(QSize(100, 10));
 
         verticalLayout_11->addWidget(label_2);
 
         textPassword = new QTextEdit(Start);
         textPassword->setObjectName(QString::fromUtf8("textPassword"));
-        sizePolicy.setHeightForWidth(textPassword->sizePolicy().hasHeightForWidth());
-        textPassword->setSizePolicy(sizePolicy);
+        sizePolicy4.setHeightForWidth(textPassword->sizePolicy().hasHeightForWidth());
+        textPassword->setSizePolicy(sizePolicy4);
         textPassword->setMaximumSize(QSize(100, 30));
 
         verticalLayout_11->addWidget(textPassword);
 
         pushButtonLogIn = new QPushButton(Start);
         pushButtonLogIn->setObjectName(QString::fromUtf8("pushButtonLogIn"));
-        sizePolicy.setHeightForWidth(pushButtonLogIn->sizePolicy().hasHeightForWidth());
-        pushButtonLogIn->setSizePolicy(sizePolicy);
+        sizePolicy4.setHeightForWidth(pushButtonLogIn->sizePolicy().hasHeightForWidth());
+        pushButtonLogIn->setSizePolicy(sizePolicy4);
         pushButtonLogIn->setMaximumSize(QSize(100, 30));
 
         verticalLayout_11->addWidget(pushButtonLogIn);
@@ -407,7 +523,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(3);
+        stackedWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -424,14 +540,19 @@ public:
         pushButtonGra1->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
         pushButtonGra2->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
         BackToMainMenu->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
-        spinButton->setText(QCoreApplication::translate("MainWindow", "SPIN", nullptr));
-        slotMachineDrum1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        label_8->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
+        Label_Gra1Credits->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         slotMachineDrum2->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        slotMachineDrum1->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         slotMachineDrum3->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_4->setText(QCoreApplication::translate("MainWindow", "BET", nullptr));
-        Label_Gra1Credits->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
-        label_8->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
+        spinButton->setText(QCoreApplication::translate("MainWindow", "SPIN", nullptr));
         BackToMainMenu_2->setText(QCoreApplication::translate("MainWindow", "Back", nullptr));
+        label_Millionaire_Pytanie->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        pushButton_Millionaire_ODP_A->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_Millionaire_ODP_B->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_Millionaire_ODP_C->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_Millionaire_ODP_D->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
