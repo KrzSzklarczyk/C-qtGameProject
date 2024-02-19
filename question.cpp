@@ -10,11 +10,11 @@ Question::Question(int questionNumber,
                    const QString &answerC_Content,
                    const QString &answerD_Content)
     : m_questionNumber(questionNumber),
-      m_questionContent(questionContent),
-      m_answerA_Content(answerA_Content),
-      m_answerB_Content(answerB_Content),
-      m_answerC_Content(answerC_Content),
-      m_answerD_Content(answerD_Content)
+    m_questionContent(questionContent),
+    m_answerA_Content(answerA_Content),
+    m_answerB_Content(answerB_Content),
+    m_answerC_Content(answerC_Content),
+    m_answerD_Content(answerD_Content)
 {
 
 }

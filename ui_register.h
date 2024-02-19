@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'register.ui'
 **
-** Created by: Qt User Interface Compiler version 6.3.2
+** Created by: Qt User Interface Compiler version 6.6.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -16,6 +16,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QVBoxLayout>
 
@@ -31,30 +32,34 @@ public:
     QTextEdit *textLoginReg;
     QLabel *label_2;
     QTextEdit *textPassReg;
+    QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButtonRegister;
 
     void setupUi(QDialog *Register)
     {
         if (Register->objectName().isEmpty())
-            Register->setObjectName(QString::fromUtf8("Register"));
-        Register->resize(300, 300);
+            Register->setObjectName("Register");
+        Register->resize(250, 250);
+        Register->setStyleSheet(QString::fromUtf8("background-color: rgb(0, 0, 127)"));
         gridLayout = new QGridLayout(Register);
-        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        gridLayout->setObjectName("gridLayout");
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName("verticalLayout_2");
         verticalLayout_2->setSizeConstraint(QLayout::SetFixedSize);
         label = new QLabel(Register);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName("label");
         label->setMinimumSize(QSize(50, 30));
         label->setMaximumSize(QSize(70, 30));
+        label->setStyleSheet(QString::fromUtf8("color: white;\n"
+"font: 700 10pt \"Segoe UI\";"));
 
         verticalLayout_2->addWidget(label);
 
         textLoginReg = new QTextEdit(Register);
-        textLoginReg->setObjectName(QString::fromUtf8("textLoginReg"));
+        textLoginReg->setObjectName("textLoginReg");
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -66,14 +71,16 @@ public:
         verticalLayout_2->addWidget(textLoginReg);
 
         label_2 = new QLabel(Register);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName("label_2");
         label_2->setMinimumSize(QSize(100, 30));
         label_2->setMaximumSize(QSize(70, 30));
+        label_2->setStyleSheet(QString::fromUtf8("color: white ;\n"
+"font: 700 10pt \"Segoe UI\";"));
 
         verticalLayout_2->addWidget(label_2);
 
         textPassReg = new QTextEdit(Register);
-        textPassReg->setObjectName(QString::fromUtf8("textPassReg"));
+        textPassReg->setObjectName("textPassReg");
         sizePolicy.setHeightForWidth(textPassReg->sizePolicy().hasHeightForWidth());
         textPassReg->setSizePolicy(sizePolicy);
         textPassReg->setMinimumSize(QSize(100, 30));
@@ -81,16 +88,20 @@ public:
 
         verticalLayout_2->addWidget(textPassReg);
 
+        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_2->addItem(verticalSpacer);
+
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName("horizontalLayout_2");
         pushButtonRegister = new QPushButton(Register);
-        pushButtonRegister->setObjectName(QString::fromUtf8("pushButtonRegister"));
+        pushButtonRegister->setObjectName("pushButtonRegister");
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(pushButtonRegister->sizePolicy().hasHeightForWidth());
         pushButtonRegister->setSizePolicy(sizePolicy1);
-        pushButtonRegister->setMinimumSize(QSize(50, 50));
+        pushButtonRegister->setMinimumSize(QSize(100, 50));
         pushButtonRegister->setMaximumSize(QSize(50, 50));
         pushButtonRegister->setFocusPolicy(Qt::StrongFocus);
 

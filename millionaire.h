@@ -9,7 +9,6 @@
 #include <QList>
 #include "QPushButton.h"
 #include "qlabel.h"
-#include "SeedMaker.h"
 #include "question.h"
 
 class Millionaire

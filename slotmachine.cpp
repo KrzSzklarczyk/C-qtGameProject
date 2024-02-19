@@ -1,5 +1,6 @@
 #include "slotmachine.h"
 
+
 slotmachine::slotmachine(QWidget* parent,
                          QLabel* reel1,
                          QLabel* reel2,

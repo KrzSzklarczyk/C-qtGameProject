@@ -5,173 +5,144 @@
   <property name="windowModality">
    <enum>Qt::NonModal</enum>
   </property>
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>778</width>
-    <height>396</height>
+    <width>600</width>
+    <height>400</height>
    </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>600</width>
+    <height>400</height>
+   </size>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(31, 31, 31)</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
-     <widget class="QStackedWidget" name="stackedWidget">
-      <property name="maximumSize">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButtonlogout">
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string>logout</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton_exit">
+      <property name="minimumSize">
        <size>
-        <width>600</width>
-        <height>400</height>
+        <width>80</width>
+        <height>0</height>
        </size>
       </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string>Exit</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="0">
+     <widget class="QStackedWidget" name="stackedWidget">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="MenuGra">
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
-        <item>
-         <layout class="QVBoxLayout" name="verticalLayout">
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout">
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_2"/>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButtonlogout">
-              <property name="text">
-               <string>logout</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_6">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <layout class="QVBoxLayout" name="verticalLayout_3">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_9">
-                <item>
-                 <widget class="QLabel" name="label_6">
-                  <property name="text">
-                   <string>Welcome</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="labelMenuGraUserName">
-                  <property name="text">
-                   <string>TextLabel</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_14">
-                <item>
-                 <widget class="QLabel" name="label_7">
-                  <property name="text">
-                   <string>Credits</string>
-                  </property>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QLabel" name="labelMenuGraCredits">
-                  <property name="text">
-                   <string>TextLabel</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-          <item>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
-            <item>
-             <widget class="QPushButton" name="pushButtonGra1">
-              <property name="minimumSize">
-               <size>
-                <width>50</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Gra1</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_3">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeType">
-               <enum>QSizePolicy::Fixed</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QPushButton" name="pushButtonGra2">
-              <property name="minimumSize">
-               <size>
-                <width>50</width>
-                <height>100</height>
-               </size>
-              </property>
-              <property name="text">
-               <string>Gra2</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
-      </widget>
-      <widget class="QWidget" name="Gra1SlotMachine">
-       <widget class="QPushButton" name="BackToMainMenu">
+       <widget class="QPushButton" name="pushButtonGra2">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>80</width>
-          <height>24</height>
+          <x>300</x>
+          <y>100</y>
+          <width>191</width>
+          <height>151</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: rgb(45, 53, 129)</string>
+        </property>
         <property name="text">
-         <string>Back</string>
+         <string>Gra2</string>
         </property>
        </widget>
+       <widget class="QPushButton" name="pushButtonGra1">
+        <property name="geometry">
+         <rect>
+          <x>80</x>
+          <y>100</y>
+          <width>191</width>
+          <height>151</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: rgb(87, 145, 71)</string>
+        </property>
+        <property name="text">
+         <string>Gra1</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Gra1SlotMachine">
        <widget class="QPushButton" name="spinButton">
         <property name="geometry">
          <rect>
-          <x>230</x>
-          <y>280</y>
-          <width>111</width>
-          <height>71</height>
+          <x>190</x>
+          <y>270</y>
+          <width>101</width>
+          <height>41</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: rgb(125, 57, 57);</string>
         </property>
         <property name="text">
          <string>SPIN</string>
@@ -181,8 +152,8 @@
         <property name="geometry">
          <rect>
           <x>0</x>
-          <y>60</y>
-          <width>200</width>
+          <y>50</y>
+          <width>175</width>
           <height>197</height>
          </rect>
         </property>
@@ -193,9 +164,9 @@
        <widget class="QLabel" name="slotMachineDrum2">
         <property name="geometry">
          <rect>
-          <x>200</x>
-          <y>60</y>
-          <width>200</width>
+          <x>160</x>
+          <y>50</y>
+          <width>175</width>
           <height>197</height>
          </rect>
         </property>
@@ -206,9 +177,9 @@
        <widget class="QLabel" name="slotMachineDrum3">
         <property name="geometry">
          <rect>
-          <x>400</x>
-          <y>60</y>
-          <width>200</width>
+          <x>320</x>
+          <y>50</y>
+          <width>175</width>
           <height>197</height>
          </rect>
         </property>
@@ -219,50 +190,40 @@
        <widget class="QTextEdit" name="betSlotMachine">
         <property name="geometry">
          <rect>
-          <x>90</x>
-          <y>300</y>
+          <x>70</x>
+          <y>270</y>
           <width>101</width>
-          <height>31</height>
+          <height>41</height>
          </rect>
+        </property>
+        <property name="font">
+         <font>
+          <family>Segoe UI</family>
+          <pointsize>11</pointsize>
+          <italic>false</italic>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(74, 111, 4)</string>
         </property>
        </widget>
-       <widget class="QLabel" name="label_4">
+       <widget class="QPushButton" name="BackToMainMenu">
         <property name="geometry">
          <rect>
-          <x>60</x>
-          <y>300</y>
-          <width>31</width>
-          <height>31</height>
+          <x>330</x>
+          <y>270</y>
+          <width>101</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="text">
-         <string>BET</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="Label_Gra1Credits">
-        <property name="geometry">
-         <rect>
-          <x>460</x>
-          <y>10</y>
-          <width>91</width>
-          <height>21</height>
-         </rect>
+        <property name="styleSheet">
+         <string notr="true">color: white</string>
         </property>
         <property name="text">
-         <string>TextLabel</string>
-        </property>
-       </widget>
-       <widget class="QLabel" name="label_8">
-        <property name="geometry">
-         <rect>
-          <x>420</x>
-          <y>10</y>
-          <width>41</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="text">
-         <string>Credits:</string>
+         <string>Back</string>
         </property>
        </widget>
       </widget>
@@ -270,11 +231,15 @@
        <widget class="QPushButton" name="BackToMainMenu_2">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>10</y>
+          <x>390</x>
+          <y>0</y>
           <width>80</width>
           <height>24</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
          <string>Back</string>
@@ -283,11 +248,15 @@
        <widget class="QLabel" name="label_Millionaire_Pytanie">
         <property name="geometry">
          <rect>
-          <x>110</x>
-          <y>10</y>
-          <width>421</width>
-          <height>81</height>
+          <x>10</x>
+          <y>80</y>
+          <width>461</width>
+          <height>41</height>
          </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255)</string>
         </property>
         <property name="text">
          <string>TextLabel</string>
@@ -296,343 +265,439 @@
        <widget class="QPushButton" name="pushButton_Millionaire_ODP_A">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>110</y>
-          <width>489</width>
-          <height>48</height>
+          <x>0</x>
+          <y>130</y>
+          <width>481</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(39, 0, 156)</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>Odpowiedz A</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_Millionaire_ODP_B">
         <property name="geometry">
          <rect>
-          <x>50</x>
-          <y>160</y>
-          <width>491</width>
-          <height>51</height>
+          <x>0</x>
+          <y>180</y>
+          <width>481</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(39, 0, 156)</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>Odpowiedz B</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_Millionaire_ODP_C">
         <property name="geometry">
          <rect>
-          <x>40</x>
-          <y>220</y>
-          <width>489</width>
-          <height>51</height>
+          <x>0</x>
+          <y>230</y>
+          <width>481</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(39, 0, 156)</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>Odpowiedz C</string>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_Millionaire_ODP_D">
         <property name="geometry">
          <rect>
-          <x>60</x>
+          <x>0</x>
           <y>280</y>
-          <width>491</width>
-          <height>51</height>
+          <width>481</width>
+          <height>41</height>
          </rect>
         </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
+        <property name="styleSheet">
+         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(39, 0, 156)</string>
         </property>
         <property name="text">
-         <string>PushButton</string>
+         <string>Odpowiedz D</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="textEdit_MillionaireBET">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>20</y>
+          <width>71</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(74, 111, 4)</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="on_pushButton_Milionaire_Start_clicked">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>20</y>
+          <width>81</width>
+          <height>41</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+background-color: rgb(125, 57, 57);</string>
+        </property>
+        <property name="text">
+         <string>START</string>
         </property>
        </widget>
       </widget>
       <widget class="QWidget" name="Start">
-       <layout class="QGridLayout" name="gridLayout_2">
-        <item row="0" column="0">
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
-          <item>
-           <layout class="QVBoxLayout" name="verticalLayout_4">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_10">
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_12"/>
-              </item>
-              <item>
-               <layout class="QHBoxLayout" name="horizontalLayout_11">
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_13"/>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_2">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_13">
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_17">
-                  <item>
-                   <widget class="QLabel" name="label_3">
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>Witaj</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="labelUserName">
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>TextLabel</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QHBoxLayout" name="horizontalLayout_16">
-                  <item>
-                   <widget class="QLabel" name="label_5">
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>Credits:</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QLabel" name="labelCredits">
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>TextLabel</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_8">
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_6">
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_12">
-                  <item>
-                   <widget class="QLabel" name="label">
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>Login</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QTextEdit" name="textLogin">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-                <item>
-                 <layout class="QVBoxLayout" name="verticalLayout_11">
-                  <item>
-                   <widget class="QLabel" name="label_2">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>10</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>Haslo</string>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QTextEdit" name="textPassword">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                   </widget>
-                  </item>
-                  <item>
-                   <widget class="QPushButton" name="pushButtonLogIn">
-                    <property name="sizePolicy">
-                     <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                      <horstretch>0</horstretch>
-                      <verstretch>0</verstretch>
-                     </sizepolicy>
-                    </property>
-                    <property name="maximumSize">
-                     <size>
-                      <width>100</width>
-                      <height>30</height>
-                     </size>
-                    </property>
-                    <property name="text">
-                     <string>Log In!</string>
-                    </property>
-                   </widget>
-                  </item>
-                 </layout>
-                </item>
-               </layout>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeType">
-                 <enum>QSizePolicy::Fixed</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>150</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <layout class="QVBoxLayout" name="verticalLayout_7"/>
-              </item>
-             </layout>
-            </item>
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout_5">
-              <item>
-               <spacer name="horizontalSpacer_7">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-              <item>
-               <widget class="QPushButton" name="pushButtonRegister">
-                <property name="text">
-                 <string>Register</string>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <spacer name="horizontalSpacer_8">
-                <property name="orientation">
-                 <enum>Qt::Horizontal</enum>
-                </property>
-                <property name="sizeHint" stdset="0">
-                 <size>
-                  <width>40</width>
-                  <height>20</height>
-                 </size>
-                </property>
-               </spacer>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </item>
-         </layout>
-        </item>
-       </layout>
+       <widget class="QTextEdit" name="textLogin">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>80</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="contextMenuPolicy">
+         <enum>Qt::DefaultContextMenu</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white;
+font: 11pt &quot;Segoe UI&quot;;
+text-align: center;</string>
+        </property>
+        <property name="midLineWidth">
+         <number>10</number>
+        </property>
+        <property name="markdown">
+         <string>Password
+
+</string>
+        </property>
+       </widget>
+       <widget class="QTextEdit" name="textPassword">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>10</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color: white</string>
+        </property>
+        <property name="midLineWidth">
+         <number>4</number>
+        </property>
+        <property name="markdown">
+         <string>Login
+
+</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonRegister">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>220</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: white;
+background-color: rgb(44, 30, 148)</string>
+        </property>
+        <property name="text">
+         <string>Register</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonLogIn">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>160</y>
+          <width>241</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="palette">
+         <palette>
+          <active>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </active>
+          <inactive>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </inactive>
+          <disabled>
+           <colorrole role="WindowText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Button">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Text">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="ButtonText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Base">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="Window">
+            <brush brushstyle="SolidPattern">
+             <color alpha="255">
+              <red>8</red>
+              <green>115</green>
+              <blue>29</blue>
+             </color>
+            </brush>
+           </colorrole>
+           <colorrole role="PlaceholderText">
+            <brush brushstyle="SolidPattern">
+             <color alpha="128">
+              <red>255</red>
+              <green>255</green>
+              <blue>255</blue>
+             </color>
+            </brush>
+           </colorrole>
+          </disabled>
+         </palette>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">font: 11pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(8, 115, 29)</string>
+        </property>
+        <property name="text">
+         <string>Log In!</string>
+        </property>
+       </widget>
       </widget>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelMenuGraUserName">
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelMenuGraCredits">
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
      </widget>
     </item>
    </layout>
   </widget>
-  <widget class="QStatusBar" name="statusbar"/>
  </widget>
  <resources/>
  <connections/>
