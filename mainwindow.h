@@ -5,6 +5,7 @@
 #include <QMainWindow>
 #include <QMessageBox>
 #include "slotmachine.h"
+#include "millionaire.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -18,6 +19,7 @@ private:
     User us;
     Register *m_okno;
     slotmachine* sm;
+    Millionaire* ml;
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();

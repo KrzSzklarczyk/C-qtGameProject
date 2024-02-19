@@ -1,5 +1,4 @@
 #include "slotmachine.h"
-#include "SeedMaker.h"
 
 slotmachine::slotmachine(QWidget* parent,
                          QLabel* reel1,

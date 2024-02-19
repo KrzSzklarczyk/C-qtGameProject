@@ -6,7 +6,7 @@
 #include <QWidget>
 #include <QRandomGenerator>
 #include "qlabel.h"
-
+#include "SeedMaker.h"
 
 class slotmachine: public QObject
 {

@@ -47,6 +47,7 @@ void MainWindow::setGUI()
     ui->labelMenuGraUserName->setText(us.getUserName());
     ui->labelMenuGraCredits->setText(QString::number(us.getCredits()));
     ui->Label_Gra1Credits->setText(QString::number(us.getCredits()));
+    ui->label_Gra2Credits->setText(QString::number(us.getCredits()));
 }
 
 void MainWindow::on_pushButtonlogout_clicked()
@@ -65,6 +66,12 @@ void MainWindow::on_pushButtonGra1_clicked()
 void MainWindow::on_pushButtonGra2_clicked()
 {
     ui->stackedWidget->setCurrentWidget(ui->Gra2);
+    ml = new Millionaire(ui->label_Millionaire_Pytanie,
+                         ui->pushButton_Millionaire_ODP_A,
+                         ui->pushButton_Millionaire_ODP_B,
+                         ui->pushButton_Millionaire_ODP_C,
+                         ui->pushButton_Millionaire_ODP_D);
+    this->setGUI();
 }
 
 void MainWindow::on_BackToMainMenu_clicked()
