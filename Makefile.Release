@@ -1151,55 +1151,13 @@ release\mainwindow.obj: mainwindow.cpp mainwindow.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractbutton.h \
 		question.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QString \
-		ui_mainwindow.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QVariant \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QApplication \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcoreapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qeventloop.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcoreapplication_platform.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfuture.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfutureinterface.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qmutex.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qresultstore.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfuture_impl.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qthreadpool.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qthread.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qdeadlinetimer.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qelapsedtimer.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qrunnable.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qexception.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qpromise.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qguiapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qinputmethod.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qguiapplication_platform.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QGridLayout \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qgridlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlayoutitem.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qboxlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QHBoxLayout \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QLabel \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QPushButton \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QSpacerItem \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QStackedWidget \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qstackedwidget.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QStatusBar \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qstatusbar.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QTextEdit \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtextedit.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractscrollarea.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextoption.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextcursor.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextformat.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qpen.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QVBoxLayout
+		ui_mainwindow.h
 
 release\millionaire.obj: millionaire.cpp millionaire.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlabel.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgetsglobal.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtguiglobal.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QObject \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobject.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobjectdefs.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qnamespace.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qglobal.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qconfig-bootstrapped.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qconfig.h \
@@ -1222,19 +1180,8 @@ release\millionaire.obj: millionaire.cpp millionaire.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qglobalstatic.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qnumeric.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qversiontagging.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtgui-config.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtguiexports.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgets-config.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgetsexports.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qframe.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qwidget.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qwindowdefs.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobjectdefs.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qnamespace.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qtmetamacros.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobjectdefs_impl.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qwindowdefs_win.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobject.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qstring.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qchar.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qstringview.h \
@@ -1275,6 +1222,16 @@ release\millionaire.obj: millionaire.cpp millionaire.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qmath.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qobject_impl.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qbindingstorage.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QWidget \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qwidget.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgetsglobal.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtguiglobal.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtgui-config.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtguiexports.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgets-config.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtwidgetsexports.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qwindowdefs.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qwindowdefs_win.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qmargins.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qaction.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qkeysequence.h \
@@ -1324,31 +1281,27 @@ release\millionaire.obj: millionaire.cpp millionaire.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qinputdevice.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qscreen.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QList \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QObject \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QRect \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QSize \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QSizeF \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\QTransform \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qnativeinterface.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qpicture.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextdocument.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QFile \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfile.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfiledevice.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QFileDialog \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qfiledialog.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qdir.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfileinfo.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QRandomGenerator \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qrandom.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QPushButton.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractbutton.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlabel.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qframe.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qpicture.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextdocument.h \
+		SeedMaker.h \
+		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QDateTime \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qdatetime.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcalendar.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qlocale.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qdialog.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QPushButton.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractbutton.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QRandomGenerator \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qrandom.h \
-		SeedMaker.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QDateTime \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QCryptographicHash \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcryptographichash.h \
 		question.h \
@@ -1549,49 +1502,6 @@ release\register.obj: register.cpp register.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qmainwindow.h \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtabwidget.h \
 		ui_register.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\QVariant \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QApplication \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcoreapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qeventloop.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qcoreapplication_platform.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfuture.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfutureinterface.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qmutex.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qresultstore.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qfuture_impl.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qthreadpool.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qthread.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qdeadlinetimer.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qelapsedtimer.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qrunnable.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qexception.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtCore\qpromise.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qguiapplication.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qinputmethod.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qguiapplication_platform.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QGridLayout \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qgridlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlayoutitem.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qboxlayout.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QHBoxLayout \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QLabel \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qlabel.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qframe.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qpicture.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextdocument.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QPushButton \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qpushbutton.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractbutton.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QTextEdit \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qtextedit.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qabstractscrollarea.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextoption.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextcursor.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qtextformat.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtGui\qpen.h \
-		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\QVBoxLayout \
 		..\..\..\..\Qt\6.3.2\msvc2019_64\include\QtWidgets\qmessagebox.h
 
 release\slotmachine.obj: slotmachine.cpp slotmachine.h \

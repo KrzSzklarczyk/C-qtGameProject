@@ -70,6 +70,9 @@ public:
     QLabel *label_9;
     QPushButton *pushButton_Chance2of4;
     QPushButton *pushButton_Chance_AnotherQ;
+    QLabel *label_10;
+    QTextEdit *textEdit_MillionaireBET;
+    QPushButton *pushButton_Miliiionaire_Start;
     QWidget *Start;
     QGridLayout *gridLayout_2;
     QHBoxLayout *horizontalLayout_3;
@@ -274,6 +277,16 @@ public:
         pushButton_Chance_AnotherQ = new QPushButton(Gra2);
         pushButton_Chance_AnotherQ->setObjectName(QString::fromUtf8("pushButton_Chance_AnotherQ"));
         pushButton_Chance_AnotherQ->setGeometry(QRect(510, 230, 81, 101));
+        label_10 = new QLabel(Gra2);
+        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setGeometry(QRect(240, 10, 31, 31));
+        textEdit_MillionaireBET = new QTextEdit(Gra2);
+        textEdit_MillionaireBET->setObjectName(QString::fromUtf8("textEdit_MillionaireBET"));
+        textEdit_MillionaireBET->setGeometry(QRect(270, 10, 131, 31));
+        pushButton_Miliiionaire_Start = new QPushButton(Gra2);
+        pushButton_Miliiionaire_Start->setObjectName(QString::fromUtf8("pushButton_Miliiionaire_Start"));
+        pushButton_Miliiionaire_Start->setGeometry(QRect(500, 40, 81, 61));
+        pushButton_Miliiionaire_Start->setCheckable(false);
         stackedWidget->addWidget(Gra2);
         Start = new QWidget();
         Start->setObjectName(QString::fromUtf8("Start"));
@@ -442,7 +455,7 @@ public:
 
         stackedWidget->addWidget(Start);
 
-        gridLayout->addWidget(stackedWidget, 1, 0, 1, 1);
+        gridLayout->addWidget(stackedWidget, 0, 0, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
         statusbar = new QStatusBar(MainWindow);
@@ -485,6 +498,8 @@ public:
         label_9->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));
         pushButton_Chance2of4->setText(QCoreApplication::translate("MainWindow", "50/50", nullptr));
         pushButton_Chance_AnotherQ->setText(QCoreApplication::translate("MainWindow", "Another One", nullptr));
+        label_10->setText(QCoreApplication::translate("MainWindow", "BET:", nullptr));
+        pushButton_Miliiionaire_Start->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Witaj", nullptr));
         labelUserName->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         label_5->setText(QCoreApplication::translate("MainWindow", "Credits:", nullptr));

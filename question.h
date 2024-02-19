@@ -5,14 +5,13 @@
 
 class Question
 {
-private:
+public:
     int m_questionNumber;
     QString m_questionContent;
     QString m_answerA_Content;
     QString m_answerB_Content;
     QString m_answerC_Content;
     QString m_answerD_Content;
-public:
     Question();
     Question(int m_questionNumber,
              const QString &questionContent,

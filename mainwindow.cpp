@@ -116,3 +116,43 @@ void MainWindow::on_BackToMainMenu_2_clicked()
     ui->stackedWidget->setCurrentWidget(ui->MenuGra);
 }
 
+
+void MainWindow::on_pushButton_Miliiionaire_Start_clicked()
+{
+    QString text = ui->textEdit_MillionaireBET->toPlainText();
+    bool isInteger;
+    int number = text.toInt(&isInteger);
+    if((isInteger && number > 0) && us.getCredits() >= number){
+        us.SubstractCredits(number);
+        this->setGUI();
+        ml->StartGame();
+    }
+    else{
+        QMessageBox mesBox;
+        mesBox.setText("Nieprawidlowa watrosc lub za malo kredytow");
+        mesBox.exec();
+    }
+}
+
+void MainWindow::on_pushButton_Millionaire_ODP_A_clicked()
+{
+    if(ml->IsAnswerCorrect(ui->pushButton_Millionaire_ODP_A->text())){
+
+    }
+}
+
+void MainWindow::on_pushButton_Millionaire_ODP_B_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_Millionaire_ODP_C_clicked()
+{
+
+}
+
+void MainWindow::on_pushButton_Millionaire_ODP_D_clicked()
+{
+
+}
+

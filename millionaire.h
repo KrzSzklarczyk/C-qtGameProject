@@ -1,14 +1,14 @@
 #ifndef MILLIONAIRE_H
 #define MILLIONAIRE_H
 
-#include "qlabel.h"
+#include <QObject>
+#include <QWidget>
 #include <QFile>
 #include <qstring.h>
-#include <QFileDialog>
-#include <iostream>
-#include "QPushButton.h"
 #include <QRandomGenerator>
 #include <QList>
+#include "QPushButton.h"
+#include "qlabel.h"
 #include "SeedMaker.h"
 #include "question.h"
 
@@ -24,8 +24,10 @@ private:
     QPushButton* m_answerD;
     QRandomGenerator prng;
     QList<Question> tabQuestion;
+    QList<QString> correctAnswers;
+    int questionNumber;
+    int gameResult;
 
-    void DrawQuestion();
     void Set_Questions();
 public:
     Millionaire(QLabel* question = nullptr,
@@ -34,6 +36,8 @@ public:
                 QPushButton* answerC = nullptr,
                 QPushButton* answerD = nullptr);
     void StartGame();
+    void DrawQuestion();
+    bool IsAnswerCorrect(QString answer);
 };
 
 #endif // MILLIONAIRE_H

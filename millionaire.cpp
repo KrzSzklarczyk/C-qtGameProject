@@ -10,7 +10,9 @@ Millionaire::Millionaire(QLabel* q,
       m_answerB(ansB),
       m_answerC(ansC),
       m_answerD(ansD),
-      prng(generateSeed())
+      prng(generateSeed()),
+      questionNumber(20),
+      gameResult(0)
 {
     m_question->setText("Rozpocznij Gre");
     m_answerA->setText("");
@@ -34,18 +36,59 @@ void Millionaire::Set_Questions(){
              }
              m_MyFileQuestions.close();
         }
+        for(auto &x : this->tabQuestion){
+            if(x.get_AnswerA_Content().contains("///")){
+                correctAnswers.push_back(x.get_AnswerA_Content());
+            }
+            if(x.get_AnswerB_Content().contains("///")){
+                correctAnswers.push_back(x.get_AnswerB_Content());
+            }
+            if(x.get_AnswerC_Content().contains("///")){
+                correctAnswers.push_back(x.get_AnswerC_Content());
+            }
+            if(x.get_AnswerD_Content().contains("///")){
+                correctAnswers.push_back(x.get_AnswerD_Content());
+            }
+        }
+        for(int i = 0; i < correctAnswers.size(); i++){
+            correctAnswers[i].remove(0,3);
+        }
+        for(int i = 0; i < tabQuestion.size(); i++){
+            if(tabQuestion[i].get_AnswerA_Content().contains("///")){
+                tabQuestion[i].m_answerA_Content.remove(0,3);
+            }
+            if(tabQuestion[i].get_AnswerB_Content().contains("///")){
+                tabQuestion[i].m_answerB_Content.remove(0,3);
+            }
+            if(tabQuestion[i].get_AnswerC_Content().contains("///")){
+                tabQuestion[i].m_answerC_Content.remove(0,3);
+            }
+            if(tabQuestion[i].get_AnswerD_Content().contains("///")){
+                tabQuestion[i].m_answerD_Content.remove(0,3);
+            }
+        }
 }
 
 void Millionaire::DrawQuestion(){
-    m_question->setText(tabQuestion[prng.bounded(20)].get_QuestionContent());
-    m_answerA->setText(tabQuestion[prng.bounded(20)].get_AnswerA_Content());
-    m_answerB->setText(tabQuestion[prng.bounded(20)].get_AnswerB_Content());
-    m_answerC->setText(tabQuestion[prng.bounded(20)].get_AnswerC_Content());
-    m_answerD->setText(tabQuestion[prng.bounded(20)].get_AnswerD_Content());
+    int value = prng.bounded(questionNumber);
+    m_question->setText(tabQuestion[value].get_QuestionContent());
+    m_answerA->setText(tabQuestion[value].get_AnswerA_Content());
+    m_answerB->setText(tabQuestion[value].get_AnswerB_Content());
+    m_answerC->setText(tabQuestion[value].get_AnswerC_Content());
+    m_answerD->setText(tabQuestion[value].get_AnswerD_Content());
+    tabQuestion.removeAt(value);
+    questionNumber--;
 }
 
 void Millionaire::StartGame(){
     DrawQuestion();
 }
 
-
+bool Millionaire::IsAnswerCorrect(QString answer){
+    for(int i = 0; i < correctAnswers.size(); i++){
+        if(correctAnswers[i] == answer){
+            return true;
+        }
+    }
+    return false;
+}

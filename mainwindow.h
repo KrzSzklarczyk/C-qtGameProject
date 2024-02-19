@@ -35,5 +35,10 @@ private slots:
     void on_spinButton_clicked();
     void handleGameFinished(int result);
     void on_BackToMainMenu_2_clicked();
+    void on_pushButton_Miliiionaire_Start_clicked();
+    void on_pushButton_Millionaire_ODP_A_clicked();
+    void on_pushButton_Millionaire_ODP_B_clicked();
+    void on_pushButton_Millionaire_ODP_C_clicked();
+    void on_pushButton_Millionaire_ODP_D_clicked();
 };
 #endif // MAINWINDOW_H

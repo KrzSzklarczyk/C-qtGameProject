@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'register.ui'
 **
-** Created by: Qt User Interface Compiler version 6.6.0
+** Created by: Qt User Interface Compiler version 6.3.2
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -37,24 +37,24 @@ public:
     void setupUi(QDialog *Register)
     {
         if (Register->objectName().isEmpty())
-            Register->setObjectName("Register");
+            Register->setObjectName(QString::fromUtf8("Register"));
         Register->resize(300, 300);
         gridLayout = new QGridLayout(Register);
-        gridLayout->setObjectName("gridLayout");
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
         horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         verticalLayout_2 = new QVBoxLayout();
-        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
         verticalLayout_2->setSizeConstraint(QLayout::SetFixedSize);
         label = new QLabel(Register);
-        label->setObjectName("label");
+        label->setObjectName(QString::fromUtf8("label"));
         label->setMinimumSize(QSize(50, 30));
         label->setMaximumSize(QSize(70, 30));
 
         verticalLayout_2->addWidget(label);
 
         textLoginReg = new QTextEdit(Register);
-        textLoginReg->setObjectName("textLoginReg");
+        textLoginReg->setObjectName(QString::fromUtf8("textLoginReg"));
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
@@ -66,14 +66,14 @@ public:
         verticalLayout_2->addWidget(textLoginReg);
 
         label_2 = new QLabel(Register);
-        label_2->setObjectName("label_2");
+        label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setMinimumSize(QSize(100, 30));
         label_2->setMaximumSize(QSize(70, 30));
 
         verticalLayout_2->addWidget(label_2);
 
         textPassReg = new QTextEdit(Register);
-        textPassReg->setObjectName("textPassReg");
+        textPassReg->setObjectName(QString::fromUtf8("textPassReg"));
         sizePolicy.setHeightForWidth(textPassReg->sizePolicy().hasHeightForWidth());
         textPassReg->setSizePolicy(sizePolicy);
         textPassReg->setMinimumSize(QSize(100, 30));
@@ -82,9 +82,9 @@ public:
         verticalLayout_2->addWidget(textPassReg);
 
         horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setObjectName("horizontalLayout_2");
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         pushButtonRegister = new QPushButton(Register);
-        pushButtonRegister->setObjectName("pushButtonRegister");
+        pushButtonRegister->setObjectName(QString::fromUtf8("pushButtonRegister"));
         QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
