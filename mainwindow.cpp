@@ -16,7 +16,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButtonLogIn_clicked()
 {
-    if(us.LogIn(ui->textLogin->toPlainText(), ui->textPassword->toPlainText()))
+    if(us.LogIn(ui->textLogin->toPlainText(), ui->textPassword->text()))
     {
         QMessageBox mesBox;
         mesBox.setText("Udalo sie poprawnie zalogowac!!!");

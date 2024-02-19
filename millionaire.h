@@ -37,6 +37,7 @@ public:
     void StartGame();
     void DrawQuestion();
     bool IsAnswerCorrect(QString answer);
+    QString WrapText(QString t);
 };
 
 #endif // MILLIONAIRE_H

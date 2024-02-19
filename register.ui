@@ -67,6 +67,9 @@ font: 700 10pt &quot;Segoe UI&quot;;</string>
            <height>30</height>
           </size>
          </property>
+         <property name="styleSheet">
+          <string notr="true">color:white</string>
+         </property>
         </widget>
        </item>
        <item>
@@ -93,13 +96,7 @@ font: 700 10pt &quot;Segoe UI&quot;;</string>
         </widget>
        </item>
        <item>
-        <widget class="QTextEdit" name="textPassReg">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-           <horstretch>0</horstretch>
-           <verstretch>0</verstretch>
-          </sizepolicy>
-         </property>
+        <widget class="QLineEdit" name="textPassReg">
          <property name="minimumSize">
           <size>
            <width>100</width>
@@ -111,6 +108,12 @@ font: 700 10pt &quot;Segoe UI&quot;;</string>
            <width>100</width>
            <height>30</height>
           </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:white</string>
+         </property>
+         <property name="echoMode">
+          <enum>QLineEdit::Password</enum>
          </property>
         </widget>
        </item>
@@ -154,6 +157,10 @@ font: 700 10pt &quot;Segoe UI&quot;;</string>
            </property>
            <property name="focusPolicy">
             <enum>Qt::StrongFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">color:white;
+background-color: rgb(48, 116, 37)</string>
            </property>
            <property name="text">
             <string>Register</string>

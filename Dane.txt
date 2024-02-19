@@ -1,3 +1,5 @@
-;;95
-elo;elo;900
-123;123;1456
+Marek;Tarnawski;750
+SoundsGoodMan;Siemek;60
+Krzysztof;Szklarczyk;1940
+123;123;1000
+Karolina;123;1100

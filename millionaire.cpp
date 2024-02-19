@@ -70,15 +70,33 @@ void Millionaire::Set_Questions(){
     }
 }
 
+QString Millionaire::WrapText(QString t)
+{
+    QString result;
+    if(t.length() > 60)
+    {
+        result = t.left(60) + "-" + "\n" + "-" + t.mid(60, t.length());
+    }
+    return result;
+}
+
 void Millionaire::DrawQuestion(){
+    if(questionNumber > 0)
+    {
     int value = prng.bounded(questionNumber);
     m_question->setText(tabQuestion[value].get_QuestionContent());
-    m_answerA->setText(tabQuestion[value].get_AnswerA_Content());
-    m_answerB->setText(tabQuestion[value].get_AnswerB_Content());
-    m_answerC->setText(tabQuestion[value].get_AnswerC_Content());
-    m_answerD->setText(tabQuestion[value].get_AnswerD_Content());
+    m_answerA->setText(WrapText(tabQuestion[value].get_AnswerA_Content()));
+    m_answerB->setText(WrapText(tabQuestion[value].get_AnswerB_Content()));
+    m_answerC->setText(WrapText(tabQuestion[value].get_AnswerC_Content()));
+    m_answerD->setText(WrapText(tabQuestion[value].get_AnswerD_Content()));
     tabQuestion.removeAt(value);
     questionNumber--;
+    }
+    else
+    {
+        Set_Questions();
+        questionNumber = 20;
+    }
 }
 
 void Millionaire::StartGame(){
@@ -87,7 +105,7 @@ void Millionaire::StartGame(){
 
 bool Millionaire::IsAnswerCorrect(QString answer){
     for(int i = 0; i < correctAnswers.size(); i++){
-        if(correctAnswers[i] == answer){
+        if(WrapText(correctAnswers[i]) == answer){
             qDebug() << "dobra odpowiedz!";
             return true;
         }

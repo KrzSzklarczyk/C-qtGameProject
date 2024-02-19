@@ -13,6 +13,7 @@
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStackedWidget>
@@ -26,8 +27,9 @@ class Ui_MainWindow
 public:
     QWidget *centralwidget;
     QGridLayout *gridLayout;
+    QLabel *labelMenuGraCredits;
     QPushButton *pushButtonlogout;
-    QPushButton *pushButton_exit;
+    QLabel *labelMenuGraUserName;
     QStackedWidget *stackedWidget;
     QWidget *MenuGra;
     QPushButton *pushButtonGra2;
@@ -50,11 +52,10 @@ public:
     QPushButton *on_pushButton_Milionaire_Start_clicked;
     QWidget *Start;
     QTextEdit *textLogin;
-    QTextEdit *textPassword;
     QPushButton *pushButtonRegister;
     QPushButton *pushButtonLogIn;
-    QLabel *labelMenuGraUserName;
-    QLabel *labelMenuGraCredits;
+    QLineEdit *textPassword;
+    QPushButton *pushButton_exit;
 
     void setupUi(QMainWindow *MainWindow)
     {
@@ -75,19 +76,23 @@ public:
         centralwidget->setSizePolicy(sizePolicy);
         gridLayout = new QGridLayout(centralwidget);
         gridLayout->setObjectName("gridLayout");
+        labelMenuGraCredits = new QLabel(centralwidget);
+        labelMenuGraCredits->setObjectName("labelMenuGraCredits");
+        labelMenuGraCredits->setStyleSheet(QString::fromUtf8("color: white"));
+
+        gridLayout->addWidget(labelMenuGraCredits, 4, 0, 1, 1);
+
         pushButtonlogout = new QPushButton(centralwidget);
         pushButtonlogout->setObjectName("pushButtonlogout");
         pushButtonlogout->setStyleSheet(QString::fromUtf8("color: white"));
 
         gridLayout->addWidget(pushButtonlogout, 0, 1, 1, 1);
 
-        pushButton_exit = new QPushButton(centralwidget);
-        pushButton_exit->setObjectName("pushButton_exit");
-        pushButton_exit->setMinimumSize(QSize(80, 0));
-        pushButton_exit->setMaximumSize(QSize(50, 16777215));
-        pushButton_exit->setStyleSheet(QString::fromUtf8("color: white"));
+        labelMenuGraUserName = new QLabel(centralwidget);
+        labelMenuGraUserName->setObjectName("labelMenuGraUserName");
+        labelMenuGraUserName->setStyleSheet(QString::fromUtf8("color: white"));
 
-        gridLayout->addWidget(pushButton_exit, 4, 1, 1, 1);
+        gridLayout->addWidget(labelMenuGraUserName, 0, 0, 1, 1);
 
         stackedWidget = new QStackedWidget(centralwidget);
         stackedWidget->setObjectName("stackedWidget");
@@ -138,53 +143,59 @@ public:
         BackToMainMenu = new QPushButton(Gra1SlotMachine);
         BackToMainMenu->setObjectName("BackToMainMenu");
         BackToMainMenu->setGeometry(QRect(330, 270, 101, 41));
-        BackToMainMenu->setStyleSheet(QString::fromUtf8("color: white"));
+        BackToMainMenu->setStyleSheet(QString::fromUtf8("color: white; background-color: rgb(137, 144, 63)"));
         stackedWidget->addWidget(Gra1SlotMachine);
         Gra2 = new QWidget();
         Gra2->setObjectName("Gra2");
         BackToMainMenu_2 = new QPushButton(Gra2);
         BackToMainMenu_2->setObjectName("BackToMainMenu_2");
-        BackToMainMenu_2->setGeometry(QRect(390, 0, 80, 24));
+        BackToMainMenu_2->setGeometry(QRect(390, 10, 91, 41));
         BackToMainMenu_2->setStyleSheet(QString::fromUtf8("font: 11pt \"Segoe UI\";\n"
-"color: rgb(255, 255, 255)"));
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(137, 144, 63)"));
         label_Millionaire_Pytanie = new QLabel(Gra2);
         label_Millionaire_Pytanie->setObjectName("label_Millionaire_Pytanie");
-        label_Millionaire_Pytanie->setGeometry(QRect(10, 80, 461, 41));
+        label_Millionaire_Pytanie->setGeometry(QRect(0, 70, 481, 41));
+        label_Millionaire_Pytanie->setLayoutDirection(Qt::LeftToRight);
         label_Millionaire_Pytanie->setStyleSheet(QString::fromUtf8("font: 11pt \"Segoe UI\";\n"
-"color: rgb(255, 255, 255)"));
+"font: 700 9pt \"Segoe UI\";\n"
+"color: rgb(255, 255, 255);\n"
+"background-color: rgb(12, 29, 121);\n"
+"text-align: center;"));
+        label_Millionaire_Pytanie->setAlignment(Qt::AlignCenter);
         pushButton_Millionaire_ODP_A = new QPushButton(Gra2);
         pushButton_Millionaire_ODP_A->setObjectName("pushButton_Millionaire_ODP_A");
         pushButton_Millionaire_ODP_A->setGeometry(QRect(0, 130, 481, 41));
-        pushButton_Millionaire_ODP_A->setStyleSheet(QString::fromUtf8("font: 7pt \"Segoe UI\";\n"
+        pushButton_Millionaire_ODP_A->setStyleSheet(QString::fromUtf8("font: 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
-"background-color: rgb(39, 0, 156)"));
+"background-color: rgb(139, 73, 157)"));
         pushButton_Millionaire_ODP_B = new QPushButton(Gra2);
         pushButton_Millionaire_ODP_B->setObjectName("pushButton_Millionaire_ODP_B");
         pushButton_Millionaire_ODP_B->setGeometry(QRect(0, 180, 481, 41));
-        pushButton_Millionaire_ODP_B->setStyleSheet(QString::fromUtf8("font: 7pt \"Segoe UI\";\n"
+        pushButton_Millionaire_ODP_B->setStyleSheet(QString::fromUtf8("font: 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
-"background-color: rgb(39, 0, 156)"));
+"background-color: rgb(139, 73, 157)"));
         pushButton_Millionaire_ODP_C = new QPushButton(Gra2);
         pushButton_Millionaire_ODP_C->setObjectName("pushButton_Millionaire_ODP_C");
         pushButton_Millionaire_ODP_C->setGeometry(QRect(0, 230, 481, 41));
-        pushButton_Millionaire_ODP_C->setStyleSheet(QString::fromUtf8("font: 7pt \"Segoe UI\";\n"
+        pushButton_Millionaire_ODP_C->setStyleSheet(QString::fromUtf8("font: 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
-"background-color: rgb(39, 0, 156)"));
+"background-color: rgb(139, 73, 157)"));
         pushButton_Millionaire_ODP_D = new QPushButton(Gra2);
         pushButton_Millionaire_ODP_D->setObjectName("pushButton_Millionaire_ODP_D");
         pushButton_Millionaire_ODP_D->setGeometry(QRect(0, 280, 481, 41));
-        pushButton_Millionaire_ODP_D->setStyleSheet(QString::fromUtf8("font: 7pt \"Segoe UI\";\n"
+        pushButton_Millionaire_ODP_D->setStyleSheet(QString::fromUtf8("font: 10pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
-"background-color: rgb(39, 0, 156)"));
+"background-color: rgb(139, 73, 157)"));
         textEdit_MillionaireBET = new QTextEdit(Gra2);
         textEdit_MillionaireBET->setObjectName("textEdit_MillionaireBET");
-        textEdit_MillionaireBET->setGeometry(QRect(180, 20, 71, 41));
+        textEdit_MillionaireBET->setGeometry(QRect(180, 10, 71, 41));
         textEdit_MillionaireBET->setStyleSheet(QString::fromUtf8("font: 11pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(74, 111, 4)"));
         on_pushButton_Milionaire_Start_clicked = new QPushButton(Gra2);
         on_pushButton_Milionaire_Start_clicked->setObjectName("on_pushButton_Milionaire_Start_clicked");
-        on_pushButton_Milionaire_Start_clicked->setGeometry(QRect(250, 20, 81, 41));
+        on_pushButton_Milionaire_Start_clicked->setGeometry(QRect(250, 10, 81, 41));
         on_pushButton_Milionaire_Start_clicked->setStyleSheet(QString::fromUtf8("color: white;\n"
 "background-color: rgb(125, 57, 57);"));
         stackedWidget->addWidget(Gra2);
@@ -192,27 +203,17 @@ public:
         Start->setObjectName("Start");
         textLogin = new QTextEdit(Start);
         textLogin->setObjectName("textLogin");
-        textLogin->setGeometry(QRect(160, 80, 241, 61));
+        textLogin->setGeometry(QRect(160, 10, 241, 61));
         QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Fixed);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(textLogin->sizePolicy().hasHeightForWidth());
         textLogin->setSizePolicy(sizePolicy1);
-        textLogin->setContextMenuPolicy(Qt::DefaultContextMenu);
-        textLogin->setStyleSheet(QString::fromUtf8("color: white;\n"
-"font: 11pt \"Segoe UI\";\n"
-"text-align: center;"));
-        textLogin->setMidLineWidth(10);
-        textPassword = new QTextEdit(Start);
-        textPassword->setObjectName("textPassword");
-        textPassword->setGeometry(QRect(160, 10, 241, 61));
-        sizePolicy1.setHeightForWidth(textPassword->sizePolicy().hasHeightForWidth());
-        textPassword->setSizePolicy(sizePolicy1);
         QFont font1;
         font1.setPointSize(11);
-        textPassword->setFont(font1);
-        textPassword->setStyleSheet(QString::fromUtf8("color: white"));
-        textPassword->setMidLineWidth(4);
+        textLogin->setFont(font1);
+        textLogin->setStyleSheet(QString::fromUtf8("color: white"));
+        textLogin->setMidLineWidth(4);
         pushButtonRegister = new QPushButton(Start);
         pushButtonRegister->setObjectName("pushButtonRegister");
         pushButtonRegister->setGeometry(QRect(160, 220, 241, 51));
@@ -262,27 +263,30 @@ public:
         pushButtonLogIn->setStyleSheet(QString::fromUtf8("font: 11pt \"Segoe UI\";\n"
 "color: rgb(255, 255, 255);\n"
 "background-color: rgb(8, 115, 29)"));
+        textPassword = new QLineEdit(Start);
+        textPassword->setObjectName("textPassword");
+        textPassword->setGeometry(QRect(160, 80, 241, 61));
+        textPassword->setStyleSheet(QString::fromUtf8("color:white;\n"
+"font: 11pt \"Segoe UI\";"));
+        textPassword->setEchoMode(QLineEdit::Password);
+        textPassword->setAlignment(Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop);
         stackedWidget->addWidget(Start);
 
         gridLayout->addWidget(stackedWidget, 5, 0, 1, 1);
 
-        labelMenuGraUserName = new QLabel(centralwidget);
-        labelMenuGraUserName->setObjectName("labelMenuGraUserName");
-        labelMenuGraUserName->setStyleSheet(QString::fromUtf8("color: white"));
+        pushButton_exit = new QPushButton(centralwidget);
+        pushButton_exit->setObjectName("pushButton_exit");
+        pushButton_exit->setMinimumSize(QSize(80, 0));
+        pushButton_exit->setMaximumSize(QSize(50, 16777215));
+        pushButton_exit->setStyleSheet(QString::fromUtf8("color: white"));
 
-        gridLayout->addWidget(labelMenuGraUserName, 0, 0, 1, 1);
-
-        labelMenuGraCredits = new QLabel(centralwidget);
-        labelMenuGraCredits->setObjectName("labelMenuGraCredits");
-        labelMenuGraCredits->setStyleSheet(QString::fromUtf8("color: white"));
-
-        gridLayout->addWidget(labelMenuGraCredits, 4, 0, 1, 1);
+        gridLayout->addWidget(pushButton_exit, 4, 1, 1, 1);
 
         MainWindow->setCentralWidget(centralwidget);
 
         retranslateUi(MainWindow);
 
-        stackedWidget->setCurrentIndex(0);
+        stackedWidget->setCurrentIndex(3);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -291,8 +295,9 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        labelMenuGraCredits->setText(QString());
         pushButtonlogout->setText(QCoreApplication::translate("MainWindow", "logout", nullptr));
-        pushButton_exit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
+        labelMenuGraUserName->setText(QString());
         pushButtonGra2->setText(QCoreApplication::translate("MainWindow", "Gra2", nullptr));
         pushButtonGra1->setText(QCoreApplication::translate("MainWindow", "Gra1", nullptr));
         spinButton->setText(QCoreApplication::translate("MainWindow", "SPIN", nullptr));
@@ -307,16 +312,13 @@ public:
         pushButton_Millionaire_ODP_C->setText(QCoreApplication::translate("MainWindow", "Odpowiedz C", nullptr));
         pushButton_Millionaire_ODP_D->setText(QCoreApplication::translate("MainWindow", "Odpowiedz D", nullptr));
         on_pushButton_Milionaire_Start_clicked->setText(QCoreApplication::translate("MainWindow", "START", nullptr));
-        textLogin->setMarkdown(QCoreApplication::translate("MainWindow", "Password\n"
-"\n"
-"", nullptr));
-        textPassword->setMarkdown(QCoreApplication::translate("MainWindow", "Login\n"
+        textLogin->setMarkdown(QCoreApplication::translate("MainWindow", "Login\n"
 "\n"
 "", nullptr));
         pushButtonRegister->setText(QCoreApplication::translate("MainWindow", "Register", nullptr));
         pushButtonLogIn->setText(QCoreApplication::translate("MainWindow", "Log In!", nullptr));
-        labelMenuGraUserName->setText(QString());
-        labelMenuGraCredits->setText(QString());
+        textPassword->setInputMask(QString());
+        pushButton_exit->setText(QCoreApplication::translate("MainWindow", "Exit", nullptr));
     } // retranslateUi
 
 };

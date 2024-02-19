@@ -42,6 +42,16 @@
     </sizepolicy>
    </property>
    <layout class="QGridLayout" name="gridLayout">
+    <item row="4" column="0">
+     <widget class="QLabel" name="labelMenuGraCredits">
+      <property name="styleSheet">
+       <string notr="true">color: white</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </item>
     <item row="0" column="1">
      <widget class="QPushButton" name="pushButtonlogout">
       <property name="styleSheet">
@@ -52,25 +62,13 @@
       </property>
      </widget>
     </item>
-    <item row="4" column="1">
-     <widget class="QPushButton" name="pushButton_exit">
-      <property name="minimumSize">
-       <size>
-        <width>80</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>50</width>
-        <height>16777215</height>
-       </size>
-      </property>
+    <item row="0" column="0">
+     <widget class="QLabel" name="labelMenuGraUserName">
       <property name="styleSheet">
        <string notr="true">color: white</string>
       </property>
       <property name="text">
-       <string>Exit</string>
+       <string/>
       </property>
      </widget>
     </item>
@@ -80,7 +78,7 @@
        <bool>true</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="MenuGra">
        <widget class="QPushButton" name="pushButtonGra2">
@@ -220,7 +218,7 @@ background-color: rgb(74, 111, 4)</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">color: white</string>
+         <string notr="true">color: white; background-color: rgb(137, 144, 63)</string>
         </property>
         <property name="text">
          <string>Back</string>
@@ -232,14 +230,15 @@ background-color: rgb(74, 111, 4)</string>
         <property name="geometry">
          <rect>
           <x>390</x>
-          <y>0</y>
-          <width>80</width>
-          <height>24</height>
+          <y>10</y>
+          <width>91</width>
+          <height>41</height>
          </rect>
         </property>
         <property name="styleSheet">
          <string notr="true">font: 11pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255)</string>
+color: rgb(255, 255, 255);
+background-color: rgb(137, 144, 63)</string>
         </property>
         <property name="text">
          <string>Back</string>
@@ -248,18 +247,27 @@ color: rgb(255, 255, 255)</string>
        <widget class="QLabel" name="label_Millionaire_Pytanie">
         <property name="geometry">
          <rect>
-          <x>10</x>
-          <y>80</y>
-          <width>461</width>
+          <x>0</x>
+          <y>70</y>
+          <width>481</width>
           <height>41</height>
          </rect>
         </property>
+        <property name="layoutDirection">
+         <enum>Qt::LeftToRight</enum>
+        </property>
         <property name="styleSheet">
          <string notr="true">font: 11pt &quot;Segoe UI&quot;;
-color: rgb(255, 255, 255)</string>
+font: 700 9pt &quot;Segoe UI&quot;;
+color: rgb(255, 255, 255);
+background-color: rgb(12, 29, 121);
+text-align: center;</string>
         </property>
         <property name="text">
          <string>TextLabel</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
        <widget class="QPushButton" name="pushButton_Millionaire_ODP_A">
@@ -272,9 +280,9 @@ color: rgb(255, 255, 255)</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+         <string notr="true">font: 10pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
-background-color: rgb(39, 0, 156)</string>
+background-color: rgb(139, 73, 157)</string>
         </property>
         <property name="text">
          <string>Odpowiedz A</string>
@@ -290,9 +298,9 @@ background-color: rgb(39, 0, 156)</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+         <string notr="true">font: 10pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
-background-color: rgb(39, 0, 156)</string>
+background-color: rgb(139, 73, 157)</string>
         </property>
         <property name="text">
          <string>Odpowiedz B</string>
@@ -308,9 +316,9 @@ background-color: rgb(39, 0, 156)</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+         <string notr="true">font: 10pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
-background-color: rgb(39, 0, 156)</string>
+background-color: rgb(139, 73, 157)</string>
         </property>
         <property name="text">
          <string>Odpowiedz C</string>
@@ -326,9 +334,9 @@ background-color: rgb(39, 0, 156)</string>
          </rect>
         </property>
         <property name="styleSheet">
-         <string notr="true">font: 7pt &quot;Segoe UI&quot;;
+         <string notr="true">font: 10pt &quot;Segoe UI&quot;;
 color: rgb(255, 255, 255);
-background-color: rgb(39, 0, 156)</string>
+background-color: rgb(139, 73, 157)</string>
         </property>
         <property name="text">
          <string>Odpowiedz D</string>
@@ -338,7 +346,7 @@ background-color: rgb(39, 0, 156)</string>
         <property name="geometry">
          <rect>
           <x>180</x>
-          <y>20</y>
+          <y>10</y>
           <width>71</width>
           <height>41</height>
          </rect>
@@ -353,7 +361,7 @@ background-color: rgb(74, 111, 4)</string>
         <property name="geometry">
          <rect>
           <x>250</x>
-          <y>20</y>
+          <y>10</y>
           <width>81</width>
           <height>41</height>
          </rect>
@@ -369,38 +377,6 @@ background-color: rgb(125, 57, 57);</string>
       </widget>
       <widget class="QWidget" name="Start">
        <widget class="QTextEdit" name="textLogin">
-        <property name="geometry">
-         <rect>
-          <x>160</x>
-          <y>80</y>
-          <width>241</width>
-          <height>61</height>
-         </rect>
-        </property>
-        <property name="sizePolicy">
-         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-          <horstretch>0</horstretch>
-          <verstretch>0</verstretch>
-         </sizepolicy>
-        </property>
-        <property name="contextMenuPolicy">
-         <enum>Qt::DefaultContextMenu</enum>
-        </property>
-        <property name="styleSheet">
-         <string notr="true">color: white;
-font: 11pt &quot;Segoe UI&quot;;
-text-align: center;</string>
-        </property>
-        <property name="midLineWidth">
-         <number>10</number>
-        </property>
-        <property name="markdown">
-         <string>Password
-
-</string>
-        </property>
-       </widget>
-       <widget class="QTextEdit" name="textPassword">
         <property name="geometry">
          <rect>
           <x>160</x>
@@ -673,26 +649,51 @@ background-color: rgb(8, 115, 29)</string>
          <string>Log In!</string>
         </property>
        </widget>
+       <widget class="QLineEdit" name="textPassword">
+        <property name="geometry">
+         <rect>
+          <x>160</x>
+          <y>80</y>
+          <width>241</width>
+          <height>61</height>
+         </rect>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">color:white;
+font: 11pt &quot;Segoe UI&quot;;</string>
+        </property>
+        <property name="inputMask">
+         <string/>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
-    <item row="0" column="0">
-     <widget class="QLabel" name="labelMenuGraUserName">
+    <item row="4" column="1">
+     <widget class="QPushButton" name="pushButton_exit">
+      <property name="minimumSize">
+       <size>
+        <width>80</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>50</width>
+        <height>16777215</height>
+       </size>
+      </property>
       <property name="styleSheet">
        <string notr="true">color: white</string>
       </property>
       <property name="text">
-       <string/>
-      </property>
-     </widget>
-    </item>
-    <item row="4" column="0">
-     <widget class="QLabel" name="labelMenuGraCredits">
-      <property name="styleSheet">
-       <string notr="true">color: white</string>
-      </property>
-      <property name="text">
-       <string/>
+       <string>Exit</string>
       </property>
      </widget>
     </item>

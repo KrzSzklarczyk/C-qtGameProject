@@ -49,19 +49,19 @@ void slotmachine::updateReels()
             if(gameResult!=0){
                 switch(reel1Position){
                 case 1:
-                    gameResult+=50;
+                    gameResult*=2;
                     break;
                 case 2:
-                    gameResult*=2;
+                    gameResult*=3;
                     break;
                 case 3:
                     gameResult*=4;
                     break;
                 case 4:
-                    gameResult+=100;
+                    gameResult*=5;
                     break;
                 case 5:
-                    gameResult+=200;
+                    gameResult*=6;
                     break;
                 case 6:
                     gameResult*=7;

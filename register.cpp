@@ -18,7 +18,7 @@ Register::~Register()
 void Register::on_pushButtonRegister_clicked()
 {
     QMessageBox mesBox;
-    if(us.Reg(ui->textLoginReg->toPlainText(), ui->textPassReg->toPlainText()))
+    if(us.Reg(ui->textLoginReg->toPlainText(), ui->textPassReg->text()))
     {
         mesBox.setText("Udalo sie poprawnie zarejestrowac!!!");
         mesBox.exec();

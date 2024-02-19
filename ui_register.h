@@ -15,6 +15,7 @@
 #include <QtWidgets/QGridLayout>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QTextEdit>
@@ -31,7 +32,7 @@ public:
     QLabel *label;
     QTextEdit *textLoginReg;
     QLabel *label_2;
-    QTextEdit *textPassReg;
+    QLineEdit *textPassReg;
     QSpacerItem *verticalSpacer;
     QHBoxLayout *horizontalLayout_2;
     QPushButton *pushButtonRegister;
@@ -67,6 +68,7 @@ public:
         textLoginReg->setSizePolicy(sizePolicy);
         textLoginReg->setMinimumSize(QSize(100, 30));
         textLoginReg->setMaximumSize(QSize(100, 30));
+        textLoginReg->setStyleSheet(QString::fromUtf8("color:white"));
 
         verticalLayout_2->addWidget(textLoginReg);
 
@@ -79,12 +81,12 @@ public:
 
         verticalLayout_2->addWidget(label_2);
 
-        textPassReg = new QTextEdit(Register);
+        textPassReg = new QLineEdit(Register);
         textPassReg->setObjectName("textPassReg");
-        sizePolicy.setHeightForWidth(textPassReg->sizePolicy().hasHeightForWidth());
-        textPassReg->setSizePolicy(sizePolicy);
         textPassReg->setMinimumSize(QSize(100, 30));
         textPassReg->setMaximumSize(QSize(100, 30));
+        textPassReg->setStyleSheet(QString::fromUtf8("color:white"));
+        textPassReg->setEchoMode(QLineEdit::Password);
 
         verticalLayout_2->addWidget(textPassReg);
 
@@ -104,6 +106,8 @@ public:
         pushButtonRegister->setMinimumSize(QSize(100, 50));
         pushButtonRegister->setMaximumSize(QSize(50, 50));
         pushButtonRegister->setFocusPolicy(Qt::StrongFocus);
+        pushButtonRegister->setStyleSheet(QString::fromUtf8("color:white;\n"
+"background-color: rgb(48, 116, 37)"));
 
         horizontalLayout_2->addWidget(pushButtonRegister);
 
